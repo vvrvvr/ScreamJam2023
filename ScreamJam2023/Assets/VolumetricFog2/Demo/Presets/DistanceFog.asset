@@ -73,6 +73,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   depthGradientMaxDistance: 500
@@ -104,11 +105,12 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   brightness: 1
   deepObscurance: 1
-  specularColor: {r: 1, g: 1, b: 0.8, a: 1}
+  specularColor: {r: 0.7924528, g: 0.7924528, b: 0.65339977, a: 1}
   specularThreshold: 0.637
   specularIntensity: 0.428
   turbulence: 0.73
@@ -123,7 +125,7 @@ MonoBehaviour:
   lightDiffusionPower: 32
   lightDiffusionIntensity: 0.4
   receiveShadows: 1
-  shadowIntensity: 0.5
+  shadowIntensity: 0.43
   shadowCancellation: 0
   shadowMaxDistance: 250
   cookie: 0
