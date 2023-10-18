@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4DB6BBDD-5882-4F15-8B0A-EB6E2D898930}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{4DB6BBDD-5882-4F15-8B0A-EB6E2D898930}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Noise" ID="{47623CB3-D6D5-403B-B53D-B9C8F64A778D}">
+					<ChildrenList>
+						<Action Name="" ID="{12BB3952-D85C-4242-B80F-96808F9A1F39}" ShortID="555712156">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SF-CK Radio Static Noise Long 01" ID="{12F968B4-1072-4BA3-973B-9BF553648442}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

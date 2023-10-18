@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	33408553	Noise			\Default Work Unit\Noise	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	47274673	SF-CK Radio Static Noise Long 01	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\SF-CK Radio Static Noise Long 01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SF-CK Radio Static Noise Long 01		402192
+
