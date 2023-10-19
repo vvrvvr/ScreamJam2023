@@ -57,6 +57,19 @@ MonoBehaviour:
   m_Active: 1
   RenderPassEvent: 500
   BlurMaterial: {fileID: 2100000, guid: 0580eed6426722443af492d67e44b3e5, type: 2}
+--- !u!114 &-4638481774965198078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96dab975e69883249a56554e791c4fd0, type: 3}
+  m_Name: ButoVolumetricLightingAndFog
+  m_EditorClassIdentifier: 
+  m_Active: 1
 --- !u!114 &-4055721486199779431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +159,8 @@ MonoBehaviour:
   - {fileID: -8898918995050211338}
   - {fileID: -673136233803236382}
   - {fileID: 5345043836648238542}
-  m_RendererFeatureMap: 8a72284266ccca07561738a3c4c170bb998f24e3cb2eb7c77d22e7d657e792439ee3058277bd7901f6570e8f52b08084e2bbb66a298aa8f6ce2d4fd80c692d4a
+  - {fileID: -4638481774965198078}
+  m_RendererFeatureMap: 8a72284266ccca07561738a3c4c170bb998f24e3cb2eb7c77d22e7d657e792439ee3058277bd7901f6570e8f52b08084e2bbb66a298aa8f6ce2d4fd80c692d4a027313c266cda0bf
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -164,6 +178,7 @@ MonoBehaviour:
     blitHDROverlay: {fileID: 4800000, guid: a89bee29cffa951418fc1e2da94d1959, type: 3}
     cameraMotionVector: {fileID: 4800000, guid: c56b7e0d4c7cb484e959caeeedae9bbf, type: 3}
     objectMotionVector: {fileID: 4800000, guid: 7b3ede40266cd49a395def176e1bc486, type: 3}
+    dataDrivenLensFlare: {fileID: 4800000, guid: 6cda457ac28612740adb23da5d39ea92, type: 3}
   m_AssetVersion: 2
   m_OpaqueLayerMask:
     serializedVersion: 2
