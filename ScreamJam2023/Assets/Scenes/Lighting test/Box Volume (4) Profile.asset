@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Box Volume (4) Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 4004708018247654248}
+  - {fileID: 6091370730857021383}
+  - {fileID: 3732119572634675406}
+--- !u!114 &3732119572634675406
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3797b844bf119c94c83b110e6cf4997a, type: 3}
+  m_Name: Sketch
+  m_EditorClassIdentifier: 
+  active: 1
+  strokeTex:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 8bd158bf28fbf3d4cb9151f3c3ae5516, type: 3}
+    dimension: 1
+  projectionMode:
+    m_OverrideState: 1
+    m_Value: 0
+  blendMode:
+    m_OverrideState: 0
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.679
+  brightness:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 1}
+  tiling:
+    m_OverrideState: 0
+    m_Value: 8
+  shader: {fileID: 4800000, guid: 5223e72bff90cca4ea18dd3ed23f3062, type: 3}
+--- !u!114 &4004708018247654248
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8c351b9ce52154fba0d0580007d570, type: 3}
+  m_Name: Kuwahara
+  m_EditorClassIdentifier: 
+  active: 0
+  mode:
+    m_OverrideState: 1
+    m_Value: 1
+  radius:
+    m_OverrideState: 1
+    m_Value: 5
+  startFadeDistance:
+    m_OverrideState: 0
+    m_Value: 100
+  endFadeDistance:
+    m_OverrideState: 0
+    m_Value: 500
+  shader: {fileID: 4800000, guid: 049d3c77a95011a459f2c602dbe82272, type: 3}
+--- !u!114 &6091370730857021383
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e21a9f18817d444b2c00478e04a58e, type: 3}
+  m_Name: Posterize
+  m_EditorClassIdentifier: 
+  active: 0
+  hsvMode:
+    m_OverrideState: 1
+    m_Value: 1
+  levels:
+    m_OverrideState: 1
+    m_Value: 256
+  hue:
+    m_OverrideState: 1
+    m_Value: 256
+  saturation:
+    m_OverrideState: 1
+    m_Value: 256
+  value:
+    m_OverrideState: 1
+    m_Value: 256
+  shader: {fileID: 4800000, guid: 40279b644fb7ed248b6b89369b5ae060, type: 3}
