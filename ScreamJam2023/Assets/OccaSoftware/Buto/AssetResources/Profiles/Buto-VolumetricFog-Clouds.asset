@@ -32,7 +32,7 @@ MonoBehaviour:
     m_Value: 1
   sampleCount:
     m_OverrideState: 1
-    m_Value: 128
+    m_Value: 35
   animateSamplePosition:
     m_OverrideState: 1
     m_Value: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Value: 1
   maxDistanceVolumetric:
     m_OverrideState: 1
-    m_Value: 96
+    m_Value: 40
   analyticFogEnabled:
     m_OverrideState: 1
     m_Value: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
     m_Value: 0
   fogDensity:
     m_OverrideState: 1
-    m_Value: 13.5
+    m_Value: 11.7
   anisotropy:
     m_OverrideState: 1
     m_Value: 0.125
@@ -76,7 +76,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   baseHeight:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   attenuationBoundarySize:
     m_OverrideState: 1
@@ -86,25 +86,25 @@ MonoBehaviour:
     m_Value: {fileID: 2800000, guid: fb5d3166054a5934ca40fe8dfbebda29, type: 3}
   colorRampInfluence:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.037
   noiseTexure:
     m_OverrideState: 1
-    m_Value: {fileID: 11700000, guid: 1005d0a8fe329024489bc477d7174505, type: 2}
+    m_Value: {fileID: 11700000, guid: 1c66affda0cd9184d9ff056bfe97e3f8, type: 2}
   octaves:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 3
   lacunarity:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 3.65
   gain:
     m_OverrideState: 1
     m_Value: 0.3
   noiseTiling:
     m_OverrideState: 1
-    m_Value: 50
+    m_Value: 32.1
   noiseWindSpeed:
     m_OverrideState: 1
-    m_Value: {x: 0.3, y: -0.5, z: 0.1}
+    m_Value: {x: 3, y: -0.5, z: 0.1}
   noiseMap:
     m_OverrideState: 1
     m_Value: {x: 0.5, y: 1}
