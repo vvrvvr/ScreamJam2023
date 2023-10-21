@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7949636065967630578}
   - component: {fileID: 8805689596855829434}
   - component: {fileID: 8299091374366064911}
+  - component: {fileID: 238044158364210766}
+  - component: {fileID: 5545486488582646654}
   m_Layer: 0
   m_Name: forest_tree_01
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308373891020682893}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.11, y: 0, z: 1.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -83,3 +85,49 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &238044158364210766
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308373891020682893}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -6.949288, y: 13.028316, z: -1.3932686}
+  m_Size: 26.056631
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.08055864
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8299091374366064911}
+  - screenRelativeHeight: 0.045363497
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.009870376
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
+--- !u!65 &5545486488582646654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308373891020682893}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.71301365, y: 26.056631, z: 0.65794086}
+  m_Center: {x: 0.0131697655, y: 13.028316, z: 0.000008225441}
