@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3524279708281834596}
   - component: {fileID: 6220690220262996278}
   - component: {fileID: 1149834424568850659}
+  - component: {fileID: 9096564157039926623}
+  - component: {fileID: 4442509625820788426}
   m_Layer: 0
   m_Name: forest_tree_naked_01
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3903583691581629345}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.17, y: 0, z: 7.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -83,3 +85,49 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &9096564157039926623
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3903583691581629345}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -8.733039, y: 13.02441, z: -7.119224}
+  m_Size: 26.064442
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.074214175
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: -7511558181221131132, guid: 87f447c941fcf614797c20aa46b255d7, type: 3}
+  - screenRelativeHeight: 0.03354273
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.009870376
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
+--- !u!65 &4442509625820788426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3903583691581629345}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9186611, y: 26.064442, z: 0.94435215}
+  m_Center: {x: -0.044662476, y: 13.02441, z: -0.18224573}
