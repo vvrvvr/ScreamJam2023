@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1660E871-14D0-4743-AA96-368019EDF67A}" SchemaVersion="110">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{1660E871-14D0-4743-AA96-368019EDF67A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1660E871-14D0-4743-AA96-368019EDF67A}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="New Mixing Session" ID="{8A30829B-E214-4216-B1EE-FA5CD0E24572}">
+					<ObjectList>
+						<ObjectRef Name="coyotes" ID="{995519AB-83DE-45C2-A07C-7B5E10DF9016}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+						<ObjectRef Name="owls" ID="{EF817BB2-6444-42D3-B7DF-954265F1233D}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+						<ObjectRef Name="screams" ID="{8F96EEAF-9D5D-40AA-9F1B-3534DE34A5E8}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+						<ObjectRef Name="rain" ID="{80FBDD14-102C-489F-A3FB-60386C95BA97}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+						<ObjectRef Name="ambience_forest_clear" ID="{D0952FF4-07A2-40DC-B46A-132F9CD63983}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
