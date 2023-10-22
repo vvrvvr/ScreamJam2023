@@ -1,5 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2777765971	state_monster			\Default Work Unit\state_monster	
+
+State	ID	Name	State Group			Notes
+	748895195	None	state_monster			
+	1206605712	angry	state_monster			
+	1874288895	idle	state_monster			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3720479411	house			\Default Work Unit\Master Audio Bus\house	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

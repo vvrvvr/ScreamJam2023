@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{4DB6BBDD-5882-4F15-8B0A-EB6E2D898930}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Noise" ID="{47623CB3-D6D5-403B-B53D-B9C8F64A778D}">
-					<ChildrenList>
-						<Action Name="" ID="{12BB3952-D85C-4242-B80F-96808F9A1F39}" ShortID="555712156">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SF-CK Radio Static Noise Long 01" ID="{12F968B4-1072-4BA3-973B-9BF553648442}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="foot_player" ID="{B01293DF-F882-4149-B51F-B2EA1729E41A}">
 					<ChildrenList>
 						<Action Name="" ID="{5BBCECC7-3139-4644-AC25-AE682AD14CA5}" ShortID="444617542">
@@ -31,6 +20,94 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="campfire" ID="{0243BB36-648C-479E-B2CC-89672444D464}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="monster_sounds" ID="{F95D9302-4DD2-497C-B6B3-676ED331D358}">
+					<ChildrenList>
+						<Action Name="" ID="{7CF0C6CF-6845-4E1B-A65B-3EF600320D05}" ShortID="250790785">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="monster_state" ID="{35F0AFD2-483C-4ECE-993C-FA7A12489FA5}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="monster_footsteps" ID="{FCB614F0-48A0-4D9A-9EFD-79FBB4D81554}">
+					<ChildrenList>
+						<Action Name="" ID="{394241A4-7B46-436B-ABF2-A2A10238FF4F}" ShortID="1041655324">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="monster_footsteps" ID="{2726A90B-5B13-4DEC-8814-8A2F7D93294F}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="monster_grab" ID="{761AFCB4-232E-4961-9D99-67AF7AEF4D16}">
+					<ChildrenList>
+						<Action Name="" ID="{2D0E4D16-A44E-4F76-BB93-E421F040076B}" ShortID="327849213">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="monster_grab_player" ID="{5BB93A24-C848-435B-BC28-52CDA4E93181}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="monster_drag" ID="{8AE6B86E-AE15-4016-9437-DEB3D69C58A2}">
+					<ChildrenList>
+						<Action Name="" ID="{637643B4-A457-48E1-B17A-D02F8884D8DA}" ShortID="380667877">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="monster_drag_player" ID="{27990F11-149C-49F5-A512-75584F2BDCD4}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="amb_forest" ID="{D99A61B8-FDA0-4A25-BB08-6861B212DAB5}">
+					<ChildrenList>
+						<Action Name="" ID="{CFAF2D2F-5DF7-48FA-A1A7-6B0ADF08F9F2}" ShortID="624723402">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_forest" ID="{00CDD560-AADD-437A-A6EC-1AA735509F33}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="amb_apartment" ID="{ED89FDE1-0B1A-46E4-B0E2-A94911A4B4FA}">
+					<ChildrenList>
+						<Action Name="" ID="{ADBDEE20-65F4-4FE9-9811-B0301EB55A62}" ShortID="267747530">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_apartment" ID="{015199D4-320A-4243-B4FC-7247D3DFC332}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="final_cassette" ID="{9E2389F6-5448-4844-8C8D-682A3B06DE20}">
+					<ChildrenList>
+						<Action Name="" ID="{02F45F2F-62C2-4A1C-AF97-8BDB32C63CE4}" ShortID="686827886">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cassette_lullaby" ID="{5E4DCA4F-B551-410B-8920-3F03DA8EEAE0}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="heartbeat" ID="{07760AAA-DD97-471F-BB09-4B9D48B92A0D}">
+					<ChildrenList>
+						<Action Name="" ID="{8D390CCB-37BE-4F44-8563-F25A43154FF0}" ShortID="218005937">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="heartbeat" ID="{D8F4D408-4B3B-41A7-B65F-779F2022AFC3}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

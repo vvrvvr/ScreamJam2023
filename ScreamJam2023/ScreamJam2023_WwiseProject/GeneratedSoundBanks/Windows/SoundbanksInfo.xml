@@ -9,27 +9,426 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{36CFA5F4-9617-D9C2-4EB8-0569CDAFD869}">
+		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{ACF1F24B-95CC-E7F9-53F2-C173B4195068}">
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<Media>
-				<File Id="47274673" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SF-CK Radio Static Noise Long 01.wav</ShortName>
-					<CachePath>SFX/SF-CK Radio Static Noise Long 01_10C4C929.wem</CachePath>
+				<File Id="73115121" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\forest\FS_forest_2.wav</ShortName>
+					<CachePath>SFX/steps/forest/FS_forest_2_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="99471019" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\19.wav</ShortName>
+					<CachePath>SFX/screams/little/19_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="110289547" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ravens47.wav</ShortName>
+					<CachePath>SFX/ravens47_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="119398464" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\carpet\Kain_carpet_run8.wav</ShortName>
+					<CachePath>SFX/steps/carpet/Kain_carpet_run8_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="146195027" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_13.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_13_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="149301052" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\20.wav</ShortName>
+					<CachePath>SFX/screams/little/20_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="161686864" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_07.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_07_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="162596081" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ravens49.wav</ShortName>
+					<CachePath>SFX/ravens49_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="190135029" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_06.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_06_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="190903244" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_11.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_11_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="201143658" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambience\amb_apartment.wav</ShortName>
+					<CachePath>SFX/ambience/amb_apartment_D45BB2B4.wem</CachePath>
+				</File>
+				<File Id="238054147" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\footsteps\monster_footstep_5.wav</ShortName>
+					<CachePath>SFX/monster/footsteps/monster_footstep_5_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="248092923" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\carpet\Kain_carpet_run6.wav</ShortName>
+					<CachePath>SFX/steps/carpet/Kain_carpet_run6_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="249688694" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\big\28.wav</ShortName>
+					<CachePath>SFX/screams/big/28_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="258403541" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>raven_far41.wav</ShortName>
+					<CachePath>SFX/raven_far41_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="271838325" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\22.wav</ShortName>
+					<CachePath>SFX/screams/little/22_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="278864024" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>owls\owl_3.wav</ShortName>
+					<CachePath>SFX/owls/owl_3_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="294297173" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_12.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_12_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="344715650" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\26.wav</ShortName>
+					<CachePath>SFX/screams/little/26_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="374800851" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ravens45.wav</ShortName>
+					<CachePath>SFX/ravens45_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="386133944" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambience\amb_apartment_radiola.wav</ShortName>
+					<CachePath>SFX/ambience/amb_apartment_radiola_49D1AC32.wem</CachePath>
+				</File>
+				<File Id="393092853" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_09.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_09_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="402541437" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\big\31.wav</ShortName>
+					<CachePath>SFX/screams/big/31_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="407618643" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\forest\FS_forest_3.wav</ShortName>
+					<CachePath>SFX/steps/forest/FS_forest_3_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="409185623" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cassetes\cassette_lullaby.wav</ShortName>
+					<CachePath>SFX/cassetes/cassette_lullaby_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="414656099" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\big\32.wav</ShortName>
+					<CachePath>SFX/screams/big/32_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="421139002" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\big\29.wav</ShortName>
+					<CachePath>SFX/screams/big/29_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="446054574" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\footsteps\monster_footstep_1.wav</ShortName>
+					<CachePath>SFX/monster/footsteps/monster_footstep_1_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="478095969" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ravens48.wav</ShortName>
+					<CachePath>SFX/ravens48_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="540102181" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>raven_far43.wav</ShortName>
+					<CachePath>SFX/raven_far43_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="552279943" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\forest\FS_forest_1.wav</ShortName>
+					<CachePath>SFX/steps/forest/FS_forest_1_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="562509718" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\carpet\Kain_carpet_run3.wav</ShortName>
+					<CachePath>SFX/steps/carpet/Kain_carpet_run3_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="600015177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\27.wav</ShortName>
+					<CachePath>SFX/screams/little/27_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="650717705" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_10.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_10_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="666190427" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ravens46.wav</ShortName>
+					<CachePath>SFX/ravens46_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="671005272" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\footsteps\monster_footstep_2.wav</ShortName>
+					<CachePath>SFX/monster/footsteps/monster_footstep_2_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="673581045" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\monster_grab.wav</ShortName>
+					<CachePath>SFX/monster/monster_grab_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="700725494" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\25.wav</ShortName>
+					<CachePath>SFX/screams/little/25_FAE41339.wem</CachePath>
+				</File>
+				<File Id="715588000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\forest\FS_forest_4.wav</ShortName>
+					<CachePath>SFX/steps/forest/FS_forest_4_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="728710739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>owls\owl_2.wav</ShortName>
+					<CachePath>SFX/owls/owl_2_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="739472380" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambience\amb_apartment_clock.wav</ShortName>
+					<CachePath>SFX/ambience/amb_apartment_clock_1656D692.wem</CachePath>
+				</File>
+				<File Id="747784766" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>owls\owl_1.wav</ShortName>
+					<CachePath>SFX/owls/owl_1_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="758686131" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>raven_far40.wav</ShortName>
+					<CachePath>SFX/raven_far40_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="768793031" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\18.wav</ShortName>
+					<CachePath>SFX/screams/little/18_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="769646367" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>coyotes\coyote_08.wav</ShortName>
+					<CachePath>SFX/coyotes/coyote_08_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="771544050" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\carpet\Kain_carpet_run9.wav</ShortName>
+					<CachePath>SFX/steps/carpet/Kain_carpet_run9_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="775166037" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\forest\FS_forest_5.wav</ShortName>
+					<CachePath>SFX/steps/forest/FS_forest_5_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="791907785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>heartbeat.wav</ShortName>
+					<CachePath>SFX/heartbeat_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="809378789" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\wood\Kain_wood_run7.wav</ShortName>
+					<CachePath>SFX/steps/wood/Kain_wood_run7_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="835170516" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\footsteps\monster_footstep_4.wav</ShortName>
+					<CachePath>SFX/monster/footsteps/monster_footstep_4_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="841260709" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\footsteps\monster_footstep_3.wav</ShortName>
+					<CachePath>SFX/monster/footsteps/monster_footstep_3_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="842146512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\big\30.wav</ShortName>
+					<CachePath>SFX/screams/big/30_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="858577885" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\monster_dragging_player.wav</ShortName>
+					<CachePath>SFX/monster/monster_dragging_player_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="866150488" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\carpet\Kain_carpet_run2.wav</ShortName>
+					<CachePath>SFX/steps/carpet/Kain_carpet_run2_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="889240842" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\wood\Kain_wood_run9.wav</ShortName>
+					<CachePath>SFX/steps/wood/Kain_wood_run9_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="910815006" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\23.wav</ShortName>
+					<CachePath>SFX/screams/little/23_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="955158687" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\wood\Kain_wood_run1.wav</ShortName>
+					<CachePath>SFX/steps/wood/Kain_wood_run1_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="958089345" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>screams\little\17.wav</ShortName>
+					<CachePath>SFX/screams/little/17_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="962295158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambience_forest_clear.wav</ShortName>
+					<CachePath>SFX/ambience_forest_clear_49D1AC32.wem</CachePath>
+				</File>
+				<File Id="1000015099" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>campfire.wav</ShortName>
+					<CachePath>SFX/campfire_49D1AC32.wem</CachePath>
+				</File>
+				<File Id="1031792117" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kain_wood_run2.wav</ShortName>
+					<CachePath>SFX/Kain_wood_run2_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="1042320461" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>steps\wood\Kain_wood_run4.wav</ShortName>
+					<CachePath>SFX/steps/wood/Kain_wood_run4_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="1049240994" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>raven_far42.wav</ShortName>
+					<CachePath>SFX/raven_far42_3C6A4CA8.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="288262444" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="315219112" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="354502254" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="457245027" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="492505368" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="573050668" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="649644791" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="740640262" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="866905598" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="980843482" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="33408553" Name="Noise" DurationType="OneShot" DurationMin="2.09425" DurationMax="2.09425">
+				<Event Id="334475136" Name="amb_apartment" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="47274673"/>
+						<MediaRef Id="201143658"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1006024461" Name="amb_forest" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="99471019"/>
+						<MediaRef Id="110289547"/>
+						<MediaRef Id="146195027"/>
+						<MediaRef Id="149301052"/>
+						<MediaRef Id="161686864"/>
+						<MediaRef Id="162596081"/>
+						<MediaRef Id="190135029"/>
+						<MediaRef Id="190903244"/>
+						<MediaRef Id="249688694"/>
+						<MediaRef Id="258403541"/>
+						<MediaRef Id="271838325"/>
+						<MediaRef Id="278864024"/>
+						<MediaRef Id="294297173"/>
+						<MediaRef Id="344715650"/>
+						<MediaRef Id="374800851"/>
+						<MediaRef Id="393092853"/>
+						<MediaRef Id="402541437"/>
+						<MediaRef Id="414656099"/>
+						<MediaRef Id="421139002"/>
+						<MediaRef Id="478095969"/>
+						<MediaRef Id="540102181"/>
+						<MediaRef Id="600015177"/>
+						<MediaRef Id="650717705"/>
+						<MediaRef Id="666190427"/>
+						<MediaRef Id="700725494"/>
+						<MediaRef Id="728710739"/>
+						<MediaRef Id="747784766"/>
+						<MediaRef Id="758686131"/>
+						<MediaRef Id="768793031"/>
+						<MediaRef Id="769646367"/>
+						<MediaRef Id="842146512"/>
+						<MediaRef Id="910815006"/>
+						<MediaRef Id="958089345"/>
+						<MediaRef Id="962295158"/>
+						<MediaRef Id="1049240994"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="288262444"/>
+							<PluginRef Id="315219112"/>
+							<PluginRef Id="354502254"/>
+							<PluginRef Id="457245027"/>
+							<PluginRef Id="492505368"/>
+							<PluginRef Id="573050668"/>
+							<PluginRef Id="649644791"/>
+							<PluginRef Id="740640262"/>
+							<PluginRef Id="866905598"/>
+							<PluginRef Id="980843482"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="1931646578" Name="campfire" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1000015099"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="327485194" Name="final_cassette" DurationType="OneShot" DurationMin="57.397125" DurationMax="57.397125">
+					<MediaRefs>
+						<MediaRef Id="409185623"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1894362767" Name="foot_player" DurationType="OneShot" DurationMin="0.35226634" DurationMax="0.8874322">
+					<AuxBusRefs>
+						<AuxBusRef Id="3720479411" Name="house"/>
+					</AuxBusRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3666776035" Id="491961918"/>
+							<MediaRefs>
+								<MediaRef Id="73115121"/>
+								<MediaRef Id="407618643"/>
+								<MediaRef Id="552279943"/>
+								<MediaRef Id="715588000"/>
+								<MediaRef Id="775166037"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3666776035" Id="2058049674" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="809378789"/>
+								<MediaRef Id="889240842"/>
+								<MediaRef Id="955158687"/>
+								<MediaRef Id="1031792117"/>
+								<MediaRef Id="1042320461"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3666776035" Id="2412606308"/>
+							<MediaRefs>
+								<MediaRef Id="119398464"/>
+								<MediaRef Id="248092923"/>
+								<MediaRef Id="562509718"/>
+								<MediaRef Id="771544050"/>
+								<MediaRef Id="866150488"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2179486487" Name="heartbeat" DurationType="OneShot" DurationMin="3.975" DurationMax="3.975">
+					<MediaRefs>
+						<MediaRef Id="791907785"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2564005774" Name="monster_drag" DurationType="OneShot" DurationMin="5.74875" DurationMax="5.74875">
+					<MediaRefs>
+						<MediaRef Id="858577885"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2468322237" Name="monster_footsteps" DurationType="OneShot" DurationMin="0.12" DurationMax="0.408">
+					<MediaRefs>
+						<MediaRef Id="238054147"/>
+						<MediaRef Id="446054574"/>
+						<MediaRef Id="671005272"/>
+						<MediaRef Id="835170516"/>
+						<MediaRef Id="841260709"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3574949606" Name="monster_grab" DurationType="OneShot" DurationMin="1.102" DurationMax="1.102">
+					<MediaRefs>
+						<MediaRef Id="673581045"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1854366052" Name="monster_sounds" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="3666776035" Name="switch_material">
+					<Switches>
+						<Switch Id="491961918" Name="forest"/>
+						<Switch Id="2058049674" Name="wood"/>
+						<Switch Id="2412606308" Name="carpet"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{ABD7267A-A86F-83EB-6E21-5BB0013163EE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -38,11 +437,38 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="3720479411" Name="house">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<StateGroups>
+				<StateGroup Id="2777765971" Name="state_monster">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1206605712" Name="angry"/>
+						<State Id="1874288895" Name="idle"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3666776035" Name="switch_material">
+					<Switches>
+						<Switch Id="491961918" Name="forest"/>
+						<Switch Id="2058049674" Name="wood"/>
+						<Switch Id="2412606308" Name="carpet"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="3991942870" Type="User" Language="SFX" Hash="{0E3E9487-2562-8161-CF73-30D6CFA3E27A}">
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{83FE3360-9BB8-B08B-5519-91FC56FBB869}</FileHash>
+	<FileHash>{14C101EE-0D1D-4E2B-21F8-A3180E63251D}</FileHash>
 </SoundBanksInfo>

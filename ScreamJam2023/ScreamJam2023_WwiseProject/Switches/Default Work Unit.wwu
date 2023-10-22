@@ -3,7 +3,7 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{CA0938E4-BAA7-47C6-8ED8-23A6172ECA9A}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="material" ID="{D58CAC3F-5FA3-4B56-B956-693B42AE5E4A}">
+				<SwitchGroup Name="switch_material" ID="{D58CAC3F-5FA3-4B56-B956-693B42AE5E4A}">
 					<ChildrenList>
 						<Switch Name="carpet" ID="{BDC731CB-9602-4C88-8F82-059E0F7D8C46}"/>
 						<Switch Name="wood" ID="{A1022AC1-7198-4DCE-A701-59284AF07AE5}"/>
