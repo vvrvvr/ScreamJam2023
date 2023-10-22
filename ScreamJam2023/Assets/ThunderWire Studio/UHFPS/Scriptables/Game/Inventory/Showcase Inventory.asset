@@ -66,7 +66,7 @@ MonoBehaviour:
         isUsable: 0
         isStackable: 0
         isExaminable: 0
-        isCombinable: 0
+        isCombinable: 1
         isDroppable: 0
         isDiscardable: 0
         canBindShortcut: 0
@@ -77,7 +77,13 @@ MonoBehaviour:
         healthPoints: 0
       Properties:
         maxStack: 0
-      CombineSettings: []
+      CombineSettings:
+      - combineWithID: 3aaf137a420e4bd49495d87fcc228eea
+        resultCombineID: 2f6543d283bb4919befe78cfb6d78a5a
+        playerItemIndex: 0
+        keepAfterCombine: 0
+        eventAfterCombine: 1
+        selectAfterCombine: 0
       LocalizationSettings:
         titleKey: 
         descriptionKey: 
