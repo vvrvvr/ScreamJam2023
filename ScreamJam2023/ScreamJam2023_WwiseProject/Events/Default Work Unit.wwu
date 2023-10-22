@@ -85,7 +85,7 @@
 						<Action Name="" ID="{ADBDEE20-65F4-4FE9-9811-B0301EB55A62}" ShortID="267747530">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="amb_apartment" ID="{015199D4-320A-4243-B4FC-7247D3DFC332}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+									<ObjectRef Name="amb_apartment" ID="{33146218-8930-4C55-B614-AA7494588C80}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -108,6 +108,39 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="heartbeat" ID="{D8F4D408-4B3B-41A7-B65F-779F2022AFC3}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="clock_ticking" ID="{2A1BEE0C-B224-48F6-9B37-0F263186FE59}">
+					<ChildrenList>
+						<Action Name="" ID="{D72644A3-03E7-4624-8F90-336003AB408C}" ShortID="607363978">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="clock_ticking" ID="{8E2E7539-D87A-4490-833B-F4BF94BFA610}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="apartment_radiola" ID="{62A9A38F-429F-468E-96EF-A6D22068FAC0}">
+					<ChildrenList>
+						<Action Name="" ID="{5138452E-034C-430C-BA5B-5E62F8484336}" ShortID="691272436">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="apartment_radio" ID="{B8658447-7BA0-440B-B8D5-E360BC17F527}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="window_rain" ID="{32081894-C832-4A3D-910B-A6ADAAEE8135}">
+					<ChildrenList>
+						<Action Name="" ID="{1B4C3DF4-3DB6-4043-8075-A0AC0B3678CF}" ShortID="423538960">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="window_rain" ID="{7C475C97-96F4-41BE-B44C-675BB4FAE01B}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -3309,11 +3309,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="amb_apartment" ID="{015199D4-320A-4243-B4FC-7247D3DFC332}" ShortID="61707676">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-									</PropertyList>
+								<BlendContainer Name="amb_apartment" ID="{33146218-8930-4C55-B614-AA7494588C80}" ShortID="992558323">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
@@ -3323,25 +3319,72 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="amb_apartment" ID="{1D18F7B3-D8EC-4BCC-8CD0-2BD191481AB2}">
+										<Sound Name="amb_apartment" ID="{364E0B00-BE04-4CE7-939A-8CD611347260}" ShortID="999670598">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_apartment" ID="{EB8A2EF4-2144-4803-8217-DDF33DDF4D81}">
+													<Language>SFX</Language>
+													<AudioFile>amb_apartment.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="204246093"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_apartment" ID="{EB8A2EF4-2144-4803-8217-DDF33DDF4D81}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="rain_strong" ID="{273DF032-1A97-40EA-874F-840B6701EAB6}" ShortID="980354943">
 											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="6203.928"/>
-												<Property Name="LoopBegin" Type="Real64" Value="8.42135962414579"/>
-												<Property Name="LoopEnd" Type="Real64" Value="42.839090261959"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="53.457326309795"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-29</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ambience\amb_apartment.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="201143658"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="rain_strong" ID="{880E6B3E-73E1-4528-B563-4361DA5EC288}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="387.854"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0559546278648133"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2.0889727736197"/>
+														<Property Name="LoopEnd" Type="Real64" Value="5.85658438318379"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>rain_strong.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="644012511"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="rain_strong" ID="{880E6B3E-73E1-4528-B563-4361DA5EC288}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="amb_apartment" ID="{1D18F7B3-D8EC-4BCC-8CD0-2BD191481AB2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<Sound Name="apartment_radio" ID="{B8658447-7BA0-440B-B8D5-E360BC17F527}" ShortID="123618821">
@@ -3378,6 +3421,11 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -3405,6 +3453,41 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="amb_apartment_clock" ID="{5CD255D3-CC6F-46A0-9E1F-BA1DE0FE55FA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="window_rain" ID="{7C475C97-96F4-41BE-B44C-675BB4FAE01B}" ShortID="592717040">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="window" ID="{8F2E9711-343F-4A25-815E-64F1C00C27DF}" WorkUnitID="{EF33701B-F5CF-4042-9C0B-F481F5404AB9}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rain_window" ID="{0BCE416E-5479-41B1-8F0A-E176324A02E3}">
+									<Language>SFX</Language>
+									<AudioFile>rain_window.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="861462695"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rain_window" ID="{0BCE416E-5479-41B1-8F0A-E176324A02E3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
