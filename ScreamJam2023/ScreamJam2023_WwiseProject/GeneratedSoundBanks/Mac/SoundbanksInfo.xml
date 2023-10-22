@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{5CADCE99-115C-9090-25E9-A03B738D5782}">
+		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{ECDA2972-7A6C-7640-A6D0-2C7A915AFB28}">
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<Media>
@@ -53,9 +53,9 @@
 					<ShortName>coyotes\coyote_11.wav</ShortName>
 					<CachePath>SFX/coyotes/coyote_11_3C6A4CA8.wem</CachePath>
 				</File>
-				<File Id="201143658" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ambience\amb_apartment.wav</ShortName>
-					<CachePath>SFX/ambience/amb_apartment_464FA65C.wem</CachePath>
+				<File Id="204246093" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>amb_apartment.wav</ShortName>
+					<CachePath>SFX/amb_apartment_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="238054147" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>monster\footsteps\monster_footstep_5.wav</ShortName>
@@ -145,6 +145,10 @@
 					<ShortName>screams\little\27.wav</ShortName>
 					<CachePath>SFX/screams/little/27_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="644012511" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rain_strong.wav</ShortName>
+					<CachePath>SFX/rain_strong_B64E6B78.wem</CachePath>
+				</File>
 				<File Id="650717705" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>coyotes\coyote_10.wav</ShortName>
 					<CachePath>SFX/coyotes/coyote_10_3C6A4CA8.wem</CachePath>
@@ -225,6 +229,10 @@
 					<ShortName>monster\monster_dragging_player.wav</ShortName>
 					<CachePath>SFX/monster/monster_dragging_player_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="861462695" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rain_window.wav</ShortName>
+					<CachePath>SFX/rain_window_49D1AC32.wem</CachePath>
+				</File>
 				<File Id="866150488" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>steps\carpet\Kain_carpet_run2.wav</ShortName>
 					<CachePath>SFX/steps/carpet/Kain_carpet_run2_3C6A4CA8.wem</CachePath>
@@ -283,7 +291,8 @@
 			<Events>
 				<Event Id="334475136" Name="amb_apartment" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="201143658"/>
+						<MediaRef Id="204246093"/>
+						<MediaRef Id="644012511"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1006024461" Name="amb_forest" DurationType="Infinite">
@@ -339,9 +348,19 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="3766095932" Name="apartment_radiola" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="386133944"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1931646578" Name="campfire" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1000015099"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="175705637" Name="clock_ticking" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="739472380"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="327485194" Name="final_cassette" DurationType="OneShot" DurationMin="57.397125" DurationMax="57.397125">
@@ -411,6 +430,11 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1854366052" Name="monster_sounds" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="290976602" Name="window_rain" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="861462695"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<SwitchGroups>
 				<SwitchGroup Id="3666776035" Name="switch_material">
@@ -470,5 +494,5 @@
 			<Path>Music.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E68EAD95-3A9E-0CA5-130F-A98BDDB5F17C}</FileHash>
+	<FileHash>{2A94179B-FFCB-E697-E3C6-88BF386B8211}</FileHash>
 </SoundBanksInfo>
