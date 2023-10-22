@@ -4048,7 +4048,7 @@ GameObject:
   - component: {fileID: 355289369}
   - component: {fileID: 355289368}
   m_Layer: 0
-  m_Name: Clock
+  m_Name: Window_rain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4074,7 +4074,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d949b14da666a435a92d0d0ed3ca0d06, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ba8fb0f9eda8241d2a13ba70ad04e0db, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -4138,7 +4138,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355289367}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18621,7 +18621,7 @@ GameObject:
   - component: {fileID: 1818251512}
   - component: {fileID: 1818251511}
   m_Layer: 0
-  m_Name: Window_rain
+  m_Name: Clock_ticking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18647,7 +18647,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ba8fb0f9eda8241d2a13ba70ad04e0db, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: d949b14da666a435a92d0d0ed3ca0d06, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
