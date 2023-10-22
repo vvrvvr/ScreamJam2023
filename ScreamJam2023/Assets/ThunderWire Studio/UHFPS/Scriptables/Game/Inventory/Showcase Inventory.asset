@@ -13,6 +13,68 @@ MonoBehaviour:
   m_Name: Showcase Inventory
   m_EditorClassIdentifier: 
   Items:
+  - guid: 3aaf137a420e4bd49495d87fcc228eea
+    item:
+      Title: Strange Tape
+      Description: 
+      Width: 1
+      Height: 1
+      Orientation: 0
+      FlipDirection: 0
+      Icon: {fileID: 21300000, guid: 26a71de0f776f2841997cce8ac2fa215, type: 3}
+      ItemObject:
+        GUID: 
+        Object: {fileID: 0}
+      Settings:
+        isUsable: 1
+        isStackable: 0
+        isExaminable: 0
+        isCombinable: 1
+        isDroppable: 0
+        isDiscardable: 0
+        canBindShortcut: 0
+        alwaysShowQuantity: 0
+      UsableSettings:
+        usableType: 0
+        playerItemIndex: -1
+        healthPoints: 0
+      Properties:
+        maxStack: 0
+      CombineSettings: []
+      LocalizationSettings:
+        titleKey: 
+        descriptionKey: 
+  - guid: 2f6543d283bb4919befe78cfb6d78a5a
+    item:
+      Title: Magnitola
+      Description: 
+      Width: 3
+      Height: 2
+      Orientation: 0
+      FlipDirection: 0
+      Icon: {fileID: 21300000, guid: 4c1139377450cdf41a836760ef2e863c, type: 3}
+      ItemObject:
+        GUID: 
+        Object: {fileID: 0}
+      Settings:
+        isUsable: 0
+        isStackable: 0
+        isExaminable: 0
+        isCombinable: 0
+        isDroppable: 0
+        isDiscardable: 0
+        canBindShortcut: 0
+        alwaysShowQuantity: 0
+      UsableSettings:
+        usableType: 0
+        playerItemIndex: -1
+        healthPoints: 0
+      Properties:
+        maxStack: 0
+      CombineSettings: []
+      LocalizationSettings:
+        titleKey: 
+        descriptionKey: 
   - guid: ba53a6ad76bb4513ba434a3b7542345a
     item:
       Title: Flashlight
