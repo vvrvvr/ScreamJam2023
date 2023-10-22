@@ -506,17 +506,6 @@
                 },
                 {
                     "name": "",
-                    "id": "c6611ae4-f842-4bce-a407-d9c4de391573",
-                    "path": "<Keyboard>/i",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "input.action.inventory",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "c6e048e3-690a-447b-87e2-06b1d1d240e2",
                     "path": "<Keyboard>/m",
                     "interactions": "",
@@ -624,6 +613,17 @@
                     "action": "input.action.arrows",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "0d92947b-ca7c-44a7-8c25-3126c61b9856",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "input.action.inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -750,6 +750,34 @@
                     "processors": "",
                     "groups": "",
                     "action": "input.action.screenshot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "custom",
+            "id": "5aef51f6-6486-4b3a-aa98-c6a6a69cdcd9",
+            "actions": [
+                {
+                    "name": "tape1",
+                    "type": "Button",
+                    "id": "c4d10c1d-1e0f-489b-9534-f382cdb819b1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "731e99da-8443-4084-b7fb-3a7cd3201aed",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "tape1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
