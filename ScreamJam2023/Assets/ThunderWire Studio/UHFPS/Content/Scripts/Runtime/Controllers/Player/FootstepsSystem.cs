@@ -2,22 +2,27 @@ using UnityEngine;
 using UHFPS.Scriptable;
 using UHFPS.Tools;
 using static UHFPS.Scriptable.SurfaceDetailsAsset;
+using UnityEngine;
+using AK.Wwise;
 
 namespace UHFPS.Runtime
 {
-    [RequireComponent(typeof(AudioSource))]
+    [RequireComponent(typeof(AkGameObj))]
     public class FootstepsSystem : PlayerComponent
     {
         public enum FootstepStyleEnum { Timed, HeadBob, Animation }
 
         public SurfaceDetailsAsset SurfaceDetails;
+
+      //[SerializeField] // Serialize the private field to make it visible in the Inspector
+        public AK.Wwise.Event footstepSoundEvent; // Private field for the Wwise event
+
         public FootstepStyleEnum FootstepStyle;
         public SurfaceDetectionEnum SurfaceDetection;
         public LayerMask FootstepsMask;
 
         public float StepPlayerVelocity = 0.1f;
         public float JumpStepAirTime = 0.1f;
-
         public float WalkStepTime = 1f;
         public float RunStepTime = 1f;
         public float LandStepTime = 1f;
@@ -28,7 +33,7 @@ namespace UHFPS.Runtime
         [Range(0, 1)] public float RunningVolume = 1f;
         [Range(0, 1)] public float LandVolume = 1f;
 
-        private AudioSource audioSource;
+        private AkGameObj akGameObj; // Use AkGameObj for Wwise integration
         private Collider surfaceUnder;
 
         private bool isWalking;
@@ -45,7 +50,7 @@ namespace UHFPS.Runtime
 
         private void Awake()
         {
-            audioSource = GetComponent<AudioSource>();
+            akGameObj = GetComponent<AkGameObj>();
         }
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -56,7 +61,7 @@ namespace UHFPS.Runtime
 
         private void Update()
         {
-            if(stepTime > 0f) stepTime -= Time.deltaTime;
+            if (stepTime > 0f) stepTime -= Time.deltaTime;
 
             if (PlayerStateMachine.IsGrounded)
             {
@@ -85,15 +90,15 @@ namespace UHFPS.Runtime
 
             if (FootstepStyle == FootstepStyleEnum.Timed)
             {
-                if(wasInAir)
+                if (wasInAir)
                 {
-                    if(airTime >= LandStepTime) 
+                    if (airTime >= LandStepTime)
                         PlayFootstep(surfaceDetails, true);
 
                     airTime = 0;
                     wasInAir = false;
                 }
-                else if(playerVelocity > StepPlayerVelocity && stepTime <= 0)
+                else if (playerVelocity > StepPlayerVelocity && stepTime <= 0)
                 {
                     PlayFootstep(surfaceDetails, false);
                     stepTime = isWalking ? WalkStepTime : isRunning ? RunStepTime : 0;
@@ -138,7 +143,11 @@ namespace UHFPS.Runtime
                 float multiplier = multipliers.FootstepsMultiplier;
                 float volumeScale = (isWalking ? WalkingVolume : isRunning ? RunningVolume : 0f) * multiplier;
 
-                audioSource.PlayOneShot(footstep, volumeScale);
+                // Use Wwise to play the FootstepSoundEvent
+                if (footstepSoundEvent.IsValid())
+                {
+                    footstepSoundEvent.Post(akGameObj.gameObject);
+                }
             }
             else if (footsteps.SurfaceLandSteps.Length > 0)
             {
@@ -148,7 +157,11 @@ namespace UHFPS.Runtime
                 float multiplier = multipliers.LandStepsMultiplier;
                 float volumeScale = LandVolume * multiplier;
 
-                audioSource.PlayOneShot(landStep, volumeScale);
+                // Use Wwise to play the FootstepSoundEvent
+                if (footstepSoundEvent.IsValid())
+                {
+                    footstepSoundEvent.Post(akGameObj.gameObject);
+                }
             }
         }
 

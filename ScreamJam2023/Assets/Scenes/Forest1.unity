@@ -5854,7 +5854,7 @@ GameObject:
   - component: {fileID: 906526628}
   m_Layer: 0
   m_Name: Terrain V2
-  m_TagString: Untagged
+  m_TagString: forest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -20437,6 +20437,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SurfaceDetails: {fileID: 11400000, guid: 926f6877e359bc445ab6b18c50756d90, type: 2}
+  footstepSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   FootstepStyle: 0
   SurfaceDetection: 2
   FootstepsMask:
@@ -41009,6 +41013,9 @@ GameObject:
   - component: {fileID: 737525661792123576}
   - component: {fileID: 4847746305328161306}
   - component: {fileID: 3855051807616448600}
+  - component: {fileID: 7960392846059451158}
+  - component: {fileID: 7960392846059451157}
+  - component: {fileID: 7960392846059451159}
   m_Layer: 3
   m_Name: HEROPLAYER
   m_TagString: Player
@@ -46030,6 +46037,7 @@ GameObject:
   - component: {fileID: 6494587297860846215}
   - component: {fileID: 7981688826602803142}
   - component: {fileID: 7981688826602803141}
+  - component: {fileID: 7981688826602803143}
   m_Layer: 0
   m_Name: MainCameraBrain
   m_TagString: MainCamera
@@ -87758,6 +87766,77 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7960392846059451157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2975719849156766630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97608398a45a4b67b5f38410eee1ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dc5066a98233e4102b6b10c622972758, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &7960392846059451158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2975719849156766630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb7e78d01d5f4264977fa7b4ad86504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &7960392846059451159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2975719849156766630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e4c2c08bcdd45bf962bbc1cb3abf87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dc5066a98233e4102b6b10c622972758, type: 2}
+  minFootstepIntervalWalking: 0.6
+  maxFootstepIntervalWalking: 0.8
+  minFootstepIntervalRunning: 0.3
+  maxFootstepIntervalRunning: 0.4
 --- !u!4 &7960918334701766135
 Transform:
   m_ObjectHideFlags: 0
@@ -88004,6 +88083,30 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &7981688826602803143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482888019960290374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560ee86277fce4dd9a91990b4e8bf5d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e74c9ba8acd4f46aba91389a3b8af9ce, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &7985850914605857814
 GameObject:
   m_ObjectHideFlags: 0
