@@ -756,6 +756,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="wood" ID="{A949A77D-A354-47A5-BAF8-505914F8C60A}" ShortID="947719420">
 									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
