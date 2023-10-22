@@ -988,7 +988,7 @@
 									<PropertyList>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>18.5</Value>
+												<Value>23</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1414,7 +1414,7 @@
 													<Modifier Name="" ID="{973BA4A1-1076-4BF2-B9F6-A4BBE638DFAE}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Max" Type="Real64" Value="16"/>
 															<Property Name="Min" Type="Real64" Value="-7"/>
 														</PropertyList>
 													</Modifier>
@@ -1885,8 +1885,18 @@
 									<PropertyList>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>5</Value>
+												<Value>8.5</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E4424E35-B584-4131-9875-97588E0126F0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="16"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -2078,6 +2088,7 @@
 													<Modifier Name="" ID="{CC9192DA-25A8-4505-A798-2565EE810BDE}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="13"/>
 															<Property Name="Min" Type="Real64" Value="-2"/>
 														</PropertyList>
 													</Modifier>
@@ -2908,6 +2919,18 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="ravens_short" ID="{045C16D8-6E09-45C0-A73F-08D6DC1E11AB}" ShortID="325964190">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{355E45F7-86EE-4F63-B25D-9E78783ADE07}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="11"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>

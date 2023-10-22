@@ -26,6 +26,9 @@ State	ID	Name	State Group			Notes
 	1206605712	angry	state_monster			
 	1874288895	idle	state_monster			
 
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	404960430	New Modulator Envelope			\Default Work Unit\New Modulator Envelope	
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	288262444	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\screams\screams\Silence2\Silence	
 	315219112	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\ravens\ravens_far\Silence\Silence	
@@ -49,7 +52,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	162596081	ravens49	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\ravens49_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\ravens_short\ravens_shot\ravens49		48400
 	190135029	coyote_06	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\coyotes\coyote_06_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\coyotes\coyotes\coyote_06		27738
 	190903244	coyote_11	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\coyotes\coyote_11_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\coyotes\coyotes\coyote_11		28065
-	201143658	amb_apartment	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\ambience\amb_apartment_D45BB2B4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_apartment\amb_apartment		345025
+	201143658	amb_apartment	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\ambience\amb_apartment_464FA65C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_apartment\amb_apartment		345025
 	238054147	monster_footstep_5	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\monster\footsteps\monster_footstep_5_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\monster\monster_footsteps\monster_footstep_5		3252
 	248092923	Kain_carpet_run6	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\steps\carpet\Kain_carpet_run6_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\carpet\Kain_carpet_run6		2499
 	249688694	28	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Windows\SFX\screams\big\28_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\screams\screams\big\28		22877

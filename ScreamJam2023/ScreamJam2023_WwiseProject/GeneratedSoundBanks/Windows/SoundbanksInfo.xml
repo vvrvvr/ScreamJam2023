@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{ACF1F24B-95CC-E7F9-53F2-C173B4195068}">
+		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{5CADCE99-115C-9090-25E9-A03B738D5782}">
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<Media>
@@ -55,7 +55,7 @@
 				</File>
 				<File Id="201143658" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambience\amb_apartment.wav</ShortName>
-					<CachePath>SFX/ambience/amb_apartment_D45BB2B4.wem</CachePath>
+					<CachePath>SFX/ambience/amb_apartment_464FA65C.wem</CachePath>
 				</File>
 				<File Id="238054147" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>monster\footsteps\monster_footstep_5.wav</ShortName>
@@ -470,5 +470,5 @@
 			<Path>Music.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{14C101EE-0D1D-4E2B-21F8-A3180E63251D}</FileHash>
+	<FileHash>{CC9AEDE7-C572-F9CC-F89E-4A12D9F57314}</FileHash>
 </SoundBanksInfo>
