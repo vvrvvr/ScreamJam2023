@@ -29,7 +29,7 @@ MonoBehaviour:
         isUsable: 0
         isStackable: 0
         isExaminable: 0
-        isCombinable: 1
+        isCombinable: 0
         isDroppable: 0
         isDiscardable: 0
         canBindShortcut: 0

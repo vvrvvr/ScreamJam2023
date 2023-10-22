@@ -6443,6 +6443,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91263dcb0bc0f2d4faec09defce5d7d8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 585835613}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91263dcb0bc0f2d4faec09defce5d7d8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 585835615}
   m_SourcePrefab: {fileID: 100100000, guid: 91263dcb0bc0f2d4faec09defce5d7d8, type: 3}
 --- !u!1 &585835610 stripped
 GameObject:
@@ -6532,6 +6535,27 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   IsExamined: 0
+--- !u!65 &585835615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585835610}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.11242437, y: 0.02689879, z: 0.07451565}
+  m_Center: {x: 0.00031232834, y: 0, z: 0}
 --- !u!1001 &589071537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18926,6 +18950,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6635422338990849328, guid: 64a96f56affe358408eccbeb218f1ebe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1926596322}
+    - targetCorrespondingSourceObject: {fileID: 6635422338990849328, guid: 64a96f56affe358408eccbeb218f1ebe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1926596326}
   m_SourcePrefab: {fileID: 100100000, guid: 64a96f56affe358408eccbeb218f1ebe, type: 3}
 --- !u!4 &1844326203 stripped
 Transform:
@@ -20028,6 +20055,27 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!65 &1926596326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926596319}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5547892, y: 0.29290402, z: 0.1557174}
+  m_Center: {x: 0, y: 0.9787478, z: 0}
 --- !u!1 &1929862187
 GameObject:
   m_ObjectHideFlags: 0
@@ -49000,7 +49048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &3034727315800707089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77441,7 +77489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6214997084900169766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86626,9 +86674,9 @@ MonoBehaviour:
       GlocText: controls.name.select
       NormalText: 
   settings:
-    rows: 5
-    columns: 9
-    cellSize: 65
+    rows: 3
+    columns: 6
+    cellSize: 100
     spacing: 10
     dragTime: 0.03
     rotateTime: 0.05
@@ -86686,7 +86734,7 @@ MonoBehaviour:
     nextSoundDelay: 0.05
   startingItems: []
   expandableSlots:
-    enabled: 1
+    enabled: 0
     showExpandableSlots: 1
     expandableRows: 2
   currentContainer: {fileID: 0}
@@ -90691,7 +90739,7 @@ RectTransform:
   m_Father: {fileID: 4296771569893285042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
