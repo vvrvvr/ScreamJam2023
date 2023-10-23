@@ -17,7 +17,7 @@ MonoBehaviour:
   PatrolTime: 3
   WalkSpeed: 0.5
   PatrolStoppingDistance: 1
-  VeryClosePlayerDetection: 2
+  VeryClosePlayerDetection: 8.29
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
