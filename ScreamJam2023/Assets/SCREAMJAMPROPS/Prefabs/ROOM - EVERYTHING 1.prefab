@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 6600859266865972692}
   - component: {fileID: 850831873870108111}
   m_Layer: 0
-  m_Name: Invisible Wall (2)
+  m_Name: Invisible Wall (2) Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -571,7 +571,7 @@ Transform:
   m_GameObject: {fileID: 4996491110416389216}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.0775, z: 0}
+  m_LocalPosition: {x: -6.477623, y: -1.0775, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -677,8 +677,8 @@ Transform:
   m_GameObject: {fileID: 5015412549488979365}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0.0000029504295}
-  m_LocalPosition: {x: 5.8999996, y: 1.4225, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalPosition: {x: 5.8999996, y: 1.4225, z: -1.8415527}
+  m_LocalScale: {x: 2, y: 1, z: 0.6260098}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6029450945702666483}
@@ -784,9 +784,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6029450945702666483}
   - {fileID: 701309991095004007}
   - {fileID: 8616985483163813374}
-  - {fileID: 6029450945702666483}
   - {fileID: 2625098286883724672}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 9000634738830130238}
   - component: {fileID: 7684808644977256255}
   m_Layer: 0
-  m_Name: Invisible Wall (1)
+  m_Name: Invisible Wall (1) Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 7138728265966352285}
   - component: {fileID: 3203491663666470896}
   m_Layer: 0
-  m_Name: Invisible Wall
+  m_Name: Invisible Wall Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
