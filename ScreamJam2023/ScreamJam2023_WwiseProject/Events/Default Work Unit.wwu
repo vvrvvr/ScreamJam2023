@@ -146,6 +146,42 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="stop_magnitola" ID="{D84F482C-5B2D-449A-8A7A-C51AEC037750}">
+					<ChildrenList>
+						<Action Name="" ID="{6AFE7F8B-5747-434A-86C9-111C19C40A01}" ShortID="986841994">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="apartment_radio" ID="{B8658447-7BA0-440B-B8D5-E360BC17F527}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="grab_cassette" ID="{B701DBF7-4295-4500-9922-E60590D23C9C}">
+					<ChildrenList>
+						<Action Name="" ID="{4F970D82-AE7D-4018-82F5-1D829A526C56}" ShortID="153187273">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="grab_cassette" ID="{64D4AF08-6799-4FEF-B1BA-0E9B93EA1A97}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="grab_radiola" ID="{F5D15E8C-619C-412A-B993-626B818013AF}">
+					<ChildrenList>
+						<Action Name="" ID="{0BE41CBE-6502-41DF-96F2-859CF465C668}" ShortID="811606075">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="grab_radiola" ID="{2F048405-E4E0-4E45-A32B-D0452E44BF91}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

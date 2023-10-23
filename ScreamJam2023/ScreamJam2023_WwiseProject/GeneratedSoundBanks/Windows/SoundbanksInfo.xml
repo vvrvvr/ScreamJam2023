@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{ECDA2972-7A6C-7640-A6D0-2C7A915AFB28}">
+		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{97FCA690-8FB7-1625-7DE0-17A614E296C7}">
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<Media>
@@ -72,6 +72,10 @@
 				<File Id="258403541" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>raven_far41.wav</ShortName>
 					<CachePath>SFX/raven_far41_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="260510500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>grab_cassette.wav</ShortName>
+					<CachePath>SFX/grab_cassette_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="271838325" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>screams\little\22.wav</ShortName>
@@ -147,7 +151,7 @@
 				</File>
 				<File Id="644012511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rain_strong.wav</ShortName>
-					<CachePath>SFX/rain_strong_B64E6B78.wem</CachePath>
+					<CachePath>SFX/rain_strong_9CAD495B.wem</CachePath>
 				</File>
 				<File Id="650717705" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>coyotes\coyote_10.wav</ShortName>
@@ -260,6 +264,10 @@
 				<File Id="1000015099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>campfire.wav</ShortName>
 					<CachePath>SFX/campfire_49D1AC32.wem</CachePath>
+				</File>
+				<File Id="1029638805" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>grab_radiola.wav</ShortName>
+					<CachePath>SFX/grab_radiola_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="1031792117" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kain_wood_run2.wav</ShortName>
@@ -405,6 +413,16 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1441833858" Name="grab_cassette" DurationType="OneShot" DurationMin="0.31345832" DurationMax="0.31345832">
+					<MediaRefs>
+						<MediaRef Id="260510500"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="47597890" Name="grab_radiola" DurationType="OneShot" DurationMin="0.5941875" DurationMax="0.5941875">
+					<MediaRefs>
+						<MediaRef Id="1029638805"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2179486487" Name="heartbeat" DurationType="OneShot" DurationMin="3.975" DurationMax="3.975">
 					<MediaRefs>
 						<MediaRef Id="791907785"/>
@@ -430,6 +448,11 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="1854366052" Name="monster_sounds" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1717311988" Name="stop_magnitola" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="386133944"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="290976602" Name="window_rain" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="861462695"/>
@@ -494,5 +517,5 @@
 			<Path>Music.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8CD4411E-0C6F-04DA-A765-1948065AA90E}</FileHash>
+	<FileHash>{D7300D2B-DEFC-97C0-A471-609B97DB454D}</FileHash>
 </SoundBanksInfo>

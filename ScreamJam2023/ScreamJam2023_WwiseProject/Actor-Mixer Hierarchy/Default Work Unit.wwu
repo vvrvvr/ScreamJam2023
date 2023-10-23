@@ -3495,6 +3495,57 @@
 								<ActiveSource Name="rain_window" ID="{0BCE416E-5479-41B1-8F0A-E176324A02E3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="grab_cassette" ID="{64D4AF08-6799-4FEF-B1BA-0E9B93EA1A97}" ShortID="280802014">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="grab_cassette" ID="{5D03932E-EF65-415B-95CD-F8ADDDD9F925}">
+									<Language>SFX</Language>
+									<AudioFile>grab_cassette.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="260510500"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="grab_cassette" ID="{5D03932E-EF65-415B-95CD-F8ADDDD9F925}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="grab_radiola" ID="{2F048405-E4E0-4E45-A32B-D0452E44BF91}" ShortID="91333656">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="grab_radiola" ID="{EE9742C3-CADB-4763-9B0F-D5ACBA6FD903}">
+									<Language>SFX</Language>
+									<AudioFile>grab_radiola.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1029638805"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="grab_radiola" ID="{EE9742C3-CADB-4763-9B0F-D5ACBA6FD903}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

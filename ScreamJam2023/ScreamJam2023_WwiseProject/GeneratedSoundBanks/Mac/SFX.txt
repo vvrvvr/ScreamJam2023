@@ -1,9 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	47597890	grab_radiola			\Default Work Unit\grab_radiola	
 	175705637	clock_ticking			\Default Work Unit\clock_ticking	
 	290976602	window_rain			\Default Work Unit\window_rain	
 	327485194	final_cassette			\Default Work Unit\final_cassette	
 	334475136	amb_apartment			\Default Work Unit\amb_apartment	
 	1006024461	amb_forest			\Default Work Unit\amb_forest	
+	1441833858	grab_cassette			\Default Work Unit\grab_cassette	
+	1717311988	stop_magnitola			\Default Work Unit\stop_magnitola	
 	1854366052	monster_sounds			\Default Work Unit\monster_sounds	
 	1894362767	foot_player			\Default Work Unit\foot_player	
 	1931646578	campfire			\Default Work Unit\campfire	
@@ -57,6 +60,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	248092923	Kain_carpet_run6	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\steps\carpet\Kain_carpet_run6_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\carpet\Kain_carpet_run6		2499
 	249688694	28	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\screams\big\28_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\screams\screams\big\28		22877
 	258403541	raven_far41	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\raven_far41_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\ravens\ravens_far\raven_far41		15234
+	260510500	grab_cassette	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\grab_cassette_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\grab_cassette		3452
 	271838325	22	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\screams\little\22_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\screams\screams\little\22		14781
 	278864024	owl_3	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\owls\owl_3_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\owls\owl\owl_3		27745
 	294297173	coyote_12	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\coyotes\coyote_12_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\coyotes\coyotes\coyote_12		24209
@@ -75,7 +79,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	552279943	FS_forest_1	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\steps\forest\FS_forest_1_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\forest\FS_forest_1		5891
 	562509718	Kain_carpet_run3	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\steps\carpet\Kain_carpet_run3_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\carpet\Kain_carpet_run3		2425
 	600015177	27	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\screams\little\27_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\screams\screams\little\27		18291
-	644012511	rain_strong	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\rain_strong_B64E6B78.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_apartment\amb_apartment\rain_strong		57669
+	644012511	rain_strong	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\rain_strong_9CAD495B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_apartment\amb_apartment\rain_strong		57669
 	650717705	coyote_10	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\coyotes\coyote_10_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\coyotes\coyotes\coyote_10		24355
 	666190427	ravens46	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\ravens46_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\ravens_short\ravens_shot\ravens46		16959
 	671005272	monster_footstep_2	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\monster\footsteps\monster_footstep_2_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\monster\monster_footsteps\monster_footstep_2		3765
@@ -104,6 +108,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	958089345	17	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\screams\little\17_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\screams\screams\little\17		24894
 	962295158	ambience_forest_clear	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\ambience_forest_clear_49D1AC32.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\ambience_forest_clear		370956
 	1000015099	campfire	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\campfire_49D1AC32.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\campfire		101246
+	1029638805	grab_radiola	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\grab_radiola_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\grab_radiola		8459
 	1031792117	Kain_wood_run2	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\Kain_wood_run2_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\wood\Kain_wood_run2		3405
 	1042320461	Kain_wood_run4	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\steps\wood\Kain_wood_run4_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps\wood\Kain_wood_run4		3686
 	1049240994	raven_far42	Y:\Desktop\Create with code\ScreamJam2023\ScreamJam2023\ScreamJam2023_WwiseProject\.cache\Mac\SFX\raven_far42_3C6A4CA8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\amb_forest\ravens\ravens_far\raven_far42		15370
