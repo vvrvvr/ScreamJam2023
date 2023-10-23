@@ -125,7 +125,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: ddbbb64d8258154f8b0aeb6e2d898930
     GuidInternal: 
-    m_lastTime: -8585035559584883617
+    m_lastTime: -8585035262426422629
     List:
     - name: amb_apartment
       guid: e1fd89ed1a0be446b0e2a94911a4b4fa
@@ -195,6 +195,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: cassette_forest
+      guid: da15e1fe29f4444db3dc907c6541288e
+      id: 2573822635
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ddbbb64d8258154f8b0aeb6e2d898930
+      - ElementName: cassette_forest
+        ObjectType: 3
+        guid: da15e1fe29f4444db3dc907c6541288e
+      Path: Events/Default Work Unit/cassette_forest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: clock_ticking
       guid: 0cee1b2a24b2f6489b370f263186fe59
       id: 175705637
@@ -212,6 +229,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: danger_stinger
+      guid: 5d0fa8ef8ddef148978066b102676e8e
+      id: 2884964887
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ddbbb64d8258154f8b0aeb6e2d898930
+      - ElementName: danger_stinger
+        ObjectType: 3
+        guid: 5d0fa8ef8ddef148978066b102676e8e
+      Path: Events/Default Work Unit/danger_stinger
+      maxAttenuation: 0
+      maxDuration: 15.145646
+      minDuration: 15.145646
+    - name: ebaka_discovered
+      guid: 709bc5c541e202449765bb487626dbbd
+      id: 3740667986
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ddbbb64d8258154f8b0aeb6e2d898930
+      - ElementName: ebaka_discovered
+        ObjectType: 3
+        guid: 709bc5c541e202449765bb487626dbbd
+      Path: Events/Default Work Unit/ebaka_discovered
+      maxAttenuation: 0
+      maxDuration: 8.5
+      minDuration: 8.5
     - name: final_cassette
       guid: f689239e485444488c8d682a3b06de20
       id: 327485194
@@ -363,8 +414,25 @@ MonoBehaviour:
         guid: 02935df9d24d7c49b6b3676ed331d358
       Path: Events/Default Work Unit/monster_sounds
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: on_damage
+      guid: e029085dea014449a9a21e74fc12fd35
+      id: 4096633626
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ddbbb64d8258154f8b0aeb6e2d898930
+      - ElementName: on_damage
+        ObjectType: 3
+        guid: e029085dea014449a9a21e74fc12fd35
+      Path: Events/Default Work Unit/on_damage
+      maxAttenuation: 0
+      maxDuration: 0.6567347
+      minDuration: 0.49256235
     - name: stop_magnitola
       guid: 2c484fd82d5b9a448a7ac51aec037750
       id: 1717311988
@@ -505,7 +573,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: e43809caa7bac6478ed823a6172eca9a
     GuidInternal: 
-    m_lastTime: -8585035578902737974
+    m_lastTime: -8585035307374953488
     List:
     - name: switch_material
       guid: 3fac8cd5a35f564bb956693b42ae5e4a
@@ -573,6 +641,56 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: switch_monster
+      guid: 9e6f534da1a26040b8500f1d56adef52
+      id: 3065790930
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e43809caa7bac6478ed823a6172eca9a
+      - ElementName: switch_monster
+        ObjectType: 11
+        guid: 9e6f534da1a26040b8500f1d56adef52
+      Path: Switches/Default Work Unit/switch_monster
+      values:
+      - name: angry
+        guid: 4dfa6e0c2551db40b3a27a70dd4d2fe1
+        id: 1206605712
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e43809caa7bac6478ed823a6172eca9a
+        - ElementName: switch_monster
+          ObjectType: 11
+          guid: 9e6f534da1a26040b8500f1d56adef52
+        - ElementName: angry
+          ObjectType: 10
+          guid: 4dfa6e0c2551db40b3a27a70dd4d2fe1
+      - name: calm
+        guid: 123506eba333354f9f97c42a7168ed75
+        id: 3753286132
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e43809caa7bac6478ed823a6172eca9a
+        - ElementName: switch_monster
+          ObjectType: 11
+          guid: 9e6f534da1a26040b8500f1d56adef52
+        - ElementName: calm
+          ObjectType: 10
+          guid: 123506eba333354f9f97c42a7168ed75
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     PathAndIcons:
@@ -588,7 +706,7 @@ MonoBehaviour:
     m_lastTime: -8585036365714720378
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

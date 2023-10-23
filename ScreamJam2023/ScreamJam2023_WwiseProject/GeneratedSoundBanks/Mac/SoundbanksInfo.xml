@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{C54A0EA9-3D44-CB61-660C-7DD8527FCDF0}">
+		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{0F10B380-074B-DDBE-090D-2649235A7DEF}">
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<Media>
@@ -157,6 +157,10 @@
 					<ShortName>grass_far1.wav</ShortName>
 					<CachePath>SFX/grass_far1_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="488359245" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cassette_forest.wav</ShortName>
+					<CachePath>SFX/cassette_forest_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="533892335" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>monster\monster_attack_1.wav</ShortName>
 					<CachePath>SFX/monster/monster_attack_1_3C6A4CA8.wem</CachePath>
@@ -173,6 +177,10 @@
 					<ShortName>steps\carpet\Kain_carpet_run3.wav</ShortName>
 					<CachePath>SFX/steps/carpet/Kain_carpet_run3_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="568982046" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>grunts_1.wav</ShortName>
+					<CachePath>SFX/grunts_1_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="600015177" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>screams\little\27.wav</ShortName>
 					<CachePath>SFX/screams/little/27_3C6A4CA8.wem</CachePath>
@@ -180,6 +188,10 @@
 				<File Id="644012511" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>rain_strong.wav</ShortName>
 					<CachePath>SFX/rain_strong_9CAD495B.wem</CachePath>
+				</File>
+				<File Id="650286973" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>grunts_2.wav</ShortName>
+					<CachePath>SFX/grunts_2_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="650717705" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>coyotes\coyote_10.wav</ShortName>
@@ -204,6 +216,10 @@
 				<File Id="715588000" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>steps\forest\FS_forest_4.wav</ShortName>
 					<CachePath>SFX/steps/forest/FS_forest_4_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="724188698" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>grunts_3.wav</ShortName>
+					<CachePath>SFX/grunts_3_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="728710739" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>owls\owl_2.wav</ShortName>
@@ -305,6 +321,10 @@
 					<ShortName>ambience_forest_clear.wav</ShortName>
 					<CachePath>SFX/ambience_forest_clear_49D1AC32.wem</CachePath>
 				</File>
+				<File Id="998278564" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>danger.wav</ShortName>
+					<CachePath>SFX/danger_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="1000015099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>campfire.wav</ShortName>
 					<CachePath>SFX/campfire_49D1AC32.wem</CachePath>
@@ -339,6 +359,7 @@
 					<Plugin Id="492505368" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="573050668" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="649644791" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="668442172" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 					<Plugin Id="740640262" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="866905598" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="949057456" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
@@ -423,6 +444,27 @@
 						<MediaRef Id="739472380"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2884964887" Name="danger_stinger" DurationType="OneShot" DurationMin="15.145646" DurationMax="15.145646">
+					<MediaRefs>
+						<MediaRef Id="998278564"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3740667986" Name="ebaka_discovered" DurationType="OneShot" DurationMin="8.5" DurationMax="8.5">
+					<MediaRefs>
+						<MediaRef Id="142175100"/>
+						<MediaRef Id="170906427"/>
+						<MediaRef Id="198666015"/>
+						<MediaRef Id="299230222"/>
+						<MediaRef Id="479363341"/>
+						<MediaRef Id="912347894"/>
+						<MediaRef Id="1014528438"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="668442172"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
 				<Event Id="327485194" Name="final_cassette" DurationType="OneShot" DurationMin="57.397125" DurationMax="57.397125">
 					<MediaRefs>
 						<MediaRef Id="409185623"/>
@@ -434,7 +476,7 @@
 					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3666776035" Id="491961918"/>
+							<SwitchValue GroupType="Switch" GroupId="3666776035" Id="491961918" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="73115121"/>
 								<MediaRef Id="407618643"/>
@@ -444,7 +486,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3666776035" Id="2058049674" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="3666776035" Id="2058049674"/>
 							<MediaRefs>
 								<MediaRef Id="809378789"/>
 								<MediaRef Id="889240842"/>
@@ -502,13 +544,13 @@
 				<Event Id="1854366052" Name="monster_sounds" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3065790930" Id="3753286132" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="3065790930" Id="3753286132"/>
 							<MediaRefs>
 								<MediaRef Id="355053785"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="3065790930" Id="1206605712"/>
+							<SwitchValue GroupType="Switch" GroupId="3065790930" Id="1206605712" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="533892335"/>
 								<MediaRef Id="882108185"/>
@@ -517,6 +559,13 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="4096633626" Name="on_damage" DurationType="OneShot" DurationMin="0.49256235" DurationMax="0.6567347">
+					<MediaRefs>
+						<MediaRef Id="568982046"/>
+						<MediaRef Id="650286973"/>
+						<MediaRef Id="724188698"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="1717311988" Name="stop_magnitola" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
@@ -545,7 +594,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FCF8AE1B-31E5-BCC1-3825-D8BF7E80E0DE}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{87E8D3E4-9C53-675A-E43F-2E02204E0671}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -599,5 +648,5 @@
 			<Path>Music.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{874C5A5D-8961-781A-3BBB-F83F217755B8}</FileHash>
+	<FileHash>{D638126B-9FC4-3258-A650-C1E2F6C7819B}</FileHash>
 </SoundBanksInfo>

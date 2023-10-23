@@ -2,11 +2,16 @@ using UnityEngine;
 using UHFPS.Tools;
 using UHFPS.Rendering;
 using static UHFPS.Runtime.GameManager;
+using AK.Wwise;
 
 namespace UHFPS.Runtime
 {
     public class PlayerHealth : BaseHealthEntity
     {
+
+        public AK.Wwise.Event DamageSoundEvent;
+        public AK.Wwise.Event HeartBeatSoundEvent;
+
         public uint MaxHealth = 100;
         public uint StartHealth = 100;
 
@@ -66,6 +71,7 @@ namespace UHFPS.Runtime
         {
             gameManager.HealthPercent.text = newHealth.ToString();
             targetHealth = (float)newHealth / MaxHealth;
+            
 
             if (UseHearthbeat)
             {
@@ -94,6 +100,7 @@ namespace UHFPS.Runtime
             {
                 int damageSound = GameTools.RandomUnique(0, DamageSounds.Length, lastDamageSound);
                 GameTools.PlayOneShot2D(transform.position, DamageSounds[damageSound], DamageVolume, "DamageSound");
+                DamageSoundEvent.Post(gameObject);
                 lastDamageSound = damageSound;
             }
 

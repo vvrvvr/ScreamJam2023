@@ -182,6 +182,40 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="danger_stinger" ID="{EFA80F5D-DE8D-48F1-9780-66B102676E8E}">
+					<ChildrenList>
+						<Action Name="" ID="{CAC242BA-A16F-41D8-9FEB-DD334B234D9C}" ShortID="858820200">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="danger_stinger" ID="{9F4F9AE6-E5F7-4C4A-8D77-30D57B361B5F}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ebaka_discovered" ID="{C5C59B70-E241-4402-9765-BB487626DBBD}">
+					<ChildrenList>
+						<Action Name="" ID="{5EBD4545-716B-4B53-830A-8D35800D9A20}" ShortID="1060893611">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ebaka_detected" ID="{96D3C457-6990-4725-8840-500D0326C2B2}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="cassette_forest" ID="{FEE115DA-F429-4D44-B3DC-907C6541288E}"/>
+				<Event Name="on_damage" ID="{5D0829E0-01EA-4944-A9A2-1E74FC12FD35}">
+					<ChildrenList>
+						<Action Name="" ID="{C5F2043A-12C5-440C-BB7F-F73619925E4E}" ShortID="626993048">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="on_damage" ID="{85B42DC6-94CC-44A0-82F5-B0D5C1A0C551}" WorkUnitID="{D62DB874-647B-4682-B0B2-7F973FA35677}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

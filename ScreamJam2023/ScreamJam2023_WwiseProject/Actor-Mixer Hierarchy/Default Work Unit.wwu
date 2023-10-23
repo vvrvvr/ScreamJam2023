@@ -32,9 +32,10 @@
 							<ChildrenList>
 								<SwitchContainer Name="monster_state" ID="{35F0AFD2-483C-4ECE-993C-FA7A12489FA5}" ShortID="733374714">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -47,7 +48,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="calm" ID="{EB063512-33A3-4F35-9F97-C42A7168ED75}" WorkUnitID="{CA0938E4-BAA7-47C6-8ED8-23A6172ECA9A}"/>
+											<ObjectRef Name="angry" ID="{0C6EFA4D-5125-40DB-B3A2-7A70DD4D2FE1}" WorkUnitID="{CA0938E4-BAA7-47C6-8ED8-23A6172ECA9A}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
@@ -92,6 +93,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<BlendContainer Name="monster_attack" ID="{F772653F-C982-463F-B699-CA7EA967188E}" ShortID="828854167">
+											<PropertyList>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
@@ -104,6 +112,11 @@
 												<Sound Name="monster_idle" ID="{0A62D3B5-BE9F-4A75-AF0F-ACD4427E7C10}" ShortID="320421833">
 													<PropertyList>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MakeUpGain" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -270,6 +283,9 @@
 											</ChildrenList>
 										</BlendContainer>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{B5980CFF-CFC4-4A93-B485-EE3B95468EA3}"/>
+									</PositioningInfo>
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
@@ -476,6 +492,35 @@
 										<ActiveSource Name="cassette_lullaby" ID="{16E06367-4609-4D8F-A80F-14CD06A126F3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="cassette_forest" ID="{30CFD749-DBEF-499B-B155-E19E56131D64}" ShortID="631954769">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ambience_forest_clear" ID="{ADF39554-1770-4A9E-884C-4E5D51306D60}">
+											<Language>SFX</Language>
+											<AudioFile>ambience_forest_clear.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="878073520"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="cassette_forest" ID="{70023D67-AFE5-4DA9-95DE-F39055698929}">
+											<Language>SFX</Language>
+											<AudioFile>cassette_forest.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="488359245"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="cassette_forest" ID="{70023D67-AFE5-4DA9-95DE-F39055698929}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<SwitchContainer Name="footsteps" ID="{3DA76AF4-98B7-4376-9C2D-4DB93D0FFABE}" ShortID="349763118">
@@ -491,7 +536,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="wood" ID="{A1022AC1-7198-4DCE-A701-59284AF07AE5}" WorkUnitID="{CA0938E4-BAA7-47C6-8ED8-23A6172ECA9A}"/>
+									<ObjectRef Name="forest" ID="{4AB52F14-7E28-45AC-BC90-2B3B3969BDD9}" WorkUnitID="{CA0938E4-BAA7-47C6-8ED8-23A6172ECA9A}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
@@ -1034,8 +1079,7 @@
 													<Modifier Name="" ID="{A0970A77-B80A-4434-B4FB-3D57E1B60788}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="4"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
+															<Property Name="Max" Type="Real64" Value="12"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1924,7 +1968,7 @@
 									<PropertyList>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>8.5</Value>
+												<Value>15</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -4364,9 +4408,22 @@
 							</ActiveSourceList>
 						</Sound>
 						<BlendContainer Name="ebaka_detected" ID="{96D3C457-6990-4725-8840-500D0326C2B2}" ShortID="1022831878">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Guitar Distortion (Custom)" ID="{F64F87AB-AE22-46C3-BAA5-EA8A1E7C5B64}" ShortID="668442172" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3"/>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
@@ -4581,6 +4638,113 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
+						<Sound Name="danger_stinger" ID="{9F4F9AE6-E5F7-4C4A-8D77-30D57B361B5F}" ShortID="258064421">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="danger" ID="{BB1AC26B-5BAF-432C-B4C1-DF7C16DA9FD1}">
+									<Language>SFX</Language>
+									<AudioFile>danger.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="998278564"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="danger" ID="{BB1AC26B-5BAF-432C-B4C1-DF7C16DA9FD1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="on_damage" ID="{85B42DC6-94CC-44A0-82F5-B0D5C1A0C551}" ShortID="1004616405">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="grunts_1" ID="{91F2EB38-FDDD-43B1-AAC9-1CC778532C37}" ShortID="47226535">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grunts_1" ID="{3B67411A-FBEC-46E4-BA7C-F95076FCF7CD}">
+											<Language>SFX</Language>
+											<AudioFile>grunts_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="568982046"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grunts_1" ID="{3B67411A-FBEC-46E4-BA7C-F95076FCF7CD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grunts_2" ID="{6C6272DF-27BC-4B1A-BE30-5BDEEEE15227}" ShortID="547140738">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grunts_2" ID="{3C763BDA-6D46-4870-A4D5-3415BD73B1E5}">
+											<Language>SFX</Language>
+											<AudioFile>grunts_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="650286973"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grunts_2" ID="{3C763BDA-6D46-4870-A4D5-3415BD73B1E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grunts_3" ID="{49B1860F-3345-4A10-A919-DB367639CF31}" ShortID="370576422">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grunts_3" ID="{AE520896-019B-4C0A-A6E2-FCF07C3A9AE2}">
+											<Language>SFX</Language>
+											<AudioFile>grunts_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="724188698"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grunts_3" ID="{AE520896-019B-4C0A-A6E2-FCF07C3A9AE2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
