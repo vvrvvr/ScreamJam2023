@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{97FCA690-8FB7-1625-7DE0-17A614E296C7}">
+		<SoundBank Id="393239870" Type="User" Language="SFX" Hash="{C54A0EA9-3D44-CB61-660C-7DD8527FCDF0}">
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<Media>
@@ -29,6 +29,10 @@
 					<ShortName>steps\carpet\Kain_carpet_run8.wav</ShortName>
 					<CachePath>SFX/steps/carpet/Kain_carpet_run8_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="142175100" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>grass_far2.wav</ShortName>
+					<CachePath>SFX/grass_far2_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="146195027" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>coyotes\coyote_13.wav</ShortName>
 					<CachePath>SFX/coyotes/coyote_13_3C6A4CA8.wem</CachePath>
@@ -45,6 +49,10 @@
 					<ShortName>ravens49.wav</ShortName>
 					<CachePath>SFX/ravens49_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="170906427" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ebaka_howl\wolf begin_howl3.wav</ShortName>
+					<CachePath>SFX/ebaka_howl/wolf begin_howl3_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="190135029" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>coyotes\coyote_06.wav</ShortName>
 					<CachePath>SFX/coyotes/coyote_06_3C6A4CA8.wem</CachePath>
@@ -52,6 +60,10 @@
 				<File Id="190903244" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>coyotes\coyote_11.wav</ShortName>
 					<CachePath>SFX/coyotes/coyote_11_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="198666015" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ebaka_detected.wav</ShortName>
+					<CachePath>SFX/ebaka_detected_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="204246093" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>amb_apartment.wav</ShortName>
@@ -89,9 +101,17 @@
 					<ShortName>coyotes\coyote_12.wav</ShortName>
 					<CachePath>SFX/coyotes/coyote_12_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="299230222" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ebaka_howl\wolf begin_howl4.wav</ShortName>
+					<CachePath>SFX/ebaka_howl/wolf begin_howl4_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="344715650" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>screams\little\26.wav</ShortName>
 					<CachePath>SFX/screams/little/26_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="355053785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\monster_idle.wav</ShortName>
+					<CachePath>SFX/monster/monster_idle_14769ECC.wem</CachePath>
 				</File>
 				<File Id="374800851" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ravens45.wav</ShortName>
@@ -132,6 +152,14 @@
 				<File Id="478095969" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ravens48.wav</ShortName>
 					<CachePath>SFX/ravens48_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="479363341" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>grass_far1.wav</ShortName>
+					<CachePath>SFX/grass_far1_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="533892335" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\monster_attack_1.wav</ShortName>
+					<CachePath>SFX/monster/monster_attack_1_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="540102181" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>raven_far43.wav</ShortName>
@@ -241,13 +269,29 @@
 					<ShortName>steps\carpet\Kain_carpet_run2.wav</ShortName>
 					<CachePath>SFX/steps/carpet/Kain_carpet_run2_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="882108185" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\monster_attack_3.wav</ShortName>
+					<CachePath>SFX/monster/monster_attack_3_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="889240842" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>steps\wood\Kain_wood_run9.wav</ShortName>
 					<CachePath>SFX/steps/wood/Kain_wood_run9_3C6A4CA8.wem</CachePath>
 				</File>
+				<File Id="910439121" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\monster_attack_2.wav</ShortName>
+					<CachePath>SFX/monster/monster_attack_2_3C6A4CA8.wem</CachePath>
+				</File>
 				<File Id="910815006" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>screams\little\23.wav</ShortName>
 					<CachePath>SFX/screams/little/23_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="912347894" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ebaka_howl\wolf begin_howl1.wav</ShortName>
+					<CachePath>SFX/ebaka_howl/wolf begin_howl1_3C6A4CA8.wem</CachePath>
+				</File>
+				<File Id="924873329" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>monster\monster_idle.wav</ShortName>
+					<CachePath>SFX/monster/monster_idle_49D1AC32.wem</CachePath>
 				</File>
 				<File Id="955158687" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>steps\wood\Kain_wood_run1.wav</ShortName>
@@ -264,6 +308,10 @@
 				<File Id="1000015099" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>campfire.wav</ShortName>
 					<CachePath>SFX/campfire_49D1AC32.wem</CachePath>
+				</File>
+				<File Id="1014528438" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ebaka_howl\wolf begin_howl2.wav</ShortName>
+					<CachePath>SFX/ebaka_howl/wolf begin_howl2_3C6A4CA8.wem</CachePath>
 				</File>
 				<File Id="1029638805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>grab_radiola.wav</ShortName>
@@ -293,6 +341,7 @@
 					<Plugin Id="649644791" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="740640262" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="866905598" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="949057456" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="980843482" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 			</Plugins>
@@ -307,6 +356,7 @@
 					<MediaRefs>
 						<MediaRef Id="99471019"/>
 						<MediaRef Id="110289547"/>
+						<MediaRef Id="142175100"/>
 						<MediaRef Id="146195027"/>
 						<MediaRef Id="149301052"/>
 						<MediaRef Id="161686864"/>
@@ -325,6 +375,7 @@
 						<MediaRef Id="414656099"/>
 						<MediaRef Id="421139002"/>
 						<MediaRef Id="478095969"/>
+						<MediaRef Id="479363341"/>
 						<MediaRef Id="540102181"/>
 						<MediaRef Id="600015177"/>
 						<MediaRef Id="650717705"/>
@@ -352,6 +403,7 @@
 							<PluginRef Id="649644791"/>
 							<PluginRef Id="740640262"/>
 							<PluginRef Id="866905598"/>
+							<PluginRef Id="949057456"/>
 							<PluginRef Id="980843482"/>
 						</Custom>
 					</PluginRefs>
@@ -447,7 +499,25 @@
 						<MediaRef Id="673581045"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1854366052" Name="monster_sounds" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1854366052" Name="monster_sounds" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3065790930" Id="3753286132" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="355053785"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3065790930" Id="1206605712"/>
+							<MediaRefs>
+								<MediaRef Id="533892335"/>
+								<MediaRef Id="882108185"/>
+								<MediaRef Id="910439121"/>
+								<MediaRef Id="924873329"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1717311988" Name="stop_magnitola" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
 						<MediaRef Id="386133944"/>
@@ -460,6 +530,12 @@
 				</Event>
 			</Events>
 			<SwitchGroups>
+				<SwitchGroup Id="3065790930" Name="switch_monster">
+					<Switches>
+						<Switch Id="1206605712" Name="angry"/>
+						<Switch Id="3753286132" Name="calm"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3666776035" Name="switch_material">
 					<Switches>
 						<Switch Id="491961918" Name="forest"/>
@@ -503,6 +579,12 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
+				<SwitchGroup Id="3065790930" Name="switch_monster">
+					<Switches>
+						<Switch Id="1206605712" Name="angry"/>
+						<Switch Id="3753286132" Name="calm"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3666776035" Name="switch_material">
 					<Switches>
 						<Switch Id="491961918" Name="forest"/>
@@ -517,5 +599,5 @@
 			<Path>Music.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D7300D2B-DEFC-97C0-A471-609B97DB454D}</FileHash>
+	<FileHash>{FAEE100D-E449-907C-C37D-8A14A4C9A5A9}</FileHash>
 </SoundBanksInfo>

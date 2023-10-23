@@ -31,12 +31,29 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="monster_state" ID="{35F0AFD2-483C-4ECE-993C-FA7A12489FA5}" ShortID="733374714">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Ebaka" ID="{591CAD12-0CC3-40EC-8887-D864B2186E3A}" WorkUnitID="{EF33701B-F5CF-4042-9C0B-F481F5404AB9}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="calm" ID="{EB063512-33A3-4F35-9F97-C42A7168ED75}" WorkUnitID="{CA0938E4-BAA7-47C6-8ED8-23A6172ECA9A}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AFE48046-900C-41BF-8D68-F7314123BA66}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="switch_monster" ID="{4D536F9E-A2A1-4060-B850-0F1D56ADEF52}" WorkUnitID="{CA0938E4-BAA7-47C6-8ED8-23A6172ECA9A}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -85,6 +102,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="monster_idle" ID="{0A62D3B5-BE9F-4A75-AF0F-ACD4427E7C10}" ShortID="320421833">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BA03F042-88E5-4CA0-A91A-D88E80425D65}"/>
@@ -276,6 +296,20 @@
 												<ItemRef Name="monster_calm" ID="{19DF75B1-57B8-4083-9300-FC4F5914B579}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="calm" ID="{EB063512-33A3-4F35-9F97-C42A7168ED75}"/>
+												<ItemList>
+													<ItemRef Name="monster_calm" ID="{19DF75B1-57B8-4083-9300-FC4F5914B579}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="angry" ID="{0C6EFA4D-5125-40DB-B3A2-7A70DD4D2FE1}"/>
+												<ItemList>
+													<ItemRef Name="monster_attack" ID="{F772653F-C982-463F-B699-CA7EA967188E}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 								<RandomSequenceContainer Name="monster_footsteps" ID="{2726A90B-5B13-4DEC-8814-8A2F7D93294F}" ShortID="779340877">

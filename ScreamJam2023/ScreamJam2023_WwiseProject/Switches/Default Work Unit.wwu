@@ -13,6 +13,12 @@
 						<Switch Name="forest" ID="{4AB52F14-7E28-45AC-BC90-2B3B3969BDD9}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="switch_monster" ID="{4D536F9E-A2A1-4060-B850-0F1D56ADEF52}">
+					<ChildrenList>
+						<Switch Name="calm" ID="{EB063512-33A3-4F35-9F97-C42A7168ED75}"/>
+						<Switch Name="angry" ID="{0C6EFA4D-5125-40DB-B3A2-7A70DD4D2FE1}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

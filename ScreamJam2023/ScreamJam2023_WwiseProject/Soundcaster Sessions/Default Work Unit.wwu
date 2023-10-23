@@ -7,6 +7,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="angry" ID="{0C6EFA4D-5125-40DB-B3A2-7A70DD4D2FE1}"/>
 						<CurrentSwitchRef Name="carpet" ID="{BDC731CB-9602-4C88-8F82-059E0F7D8C46}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

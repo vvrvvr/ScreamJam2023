@@ -37,7 +37,7 @@ public class FootstepController : MonoBehaviour
         bool isWalking = playerStateMachine.IsCurrent(PlayerStateMachine.WALK_STATE);
         bool isRunning = playerStateMachine.IsCurrent(PlayerStateMachine.RUN_STATE);
 
-        Debug.Log("Player is " + (isWalking ? "walking" : isRunning ? "running" : "neither"));
+        
 
         return (isWalking || isRunning);
     }
