@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3903583691581629345
+--- !u!1 &4830343980032689656
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3524279708281834596}
-  - component: {fileID: 6220690220262996278}
-  - component: {fileID: 1149834424568850659}
-  - component: {fileID: 9096564157039926623}
-  - component: {fileID: 4442509625820788426}
+  - component: {fileID: 1535310450561537723}
+  - component: {fileID: 2216402191507787160}
+  - component: {fileID: 8049285485225968071}
+  - component: {fileID: 3759940043621974988}
   m_Layer: 0
-  m_Name: forest_tree_naked_01
+  m_Name: forest_trunk_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3524279708281834596
+--- !u!4 &1535310450561537723
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3903583691581629345}
+  m_GameObject: {fileID: 4830343980032689656}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.17, y: 0, z: 7.17}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20.787945, y: 0.17456222, z: -288.4667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6220690220262996278
+--- !u!33 &2216402191507787160
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3903583691581629345}
-  m_Mesh: {fileID: -1663065312805310099, guid: 87f447c941fcf614797c20aa46b255d7, type: 3}
---- !u!23 &1149834424568850659
+  m_GameObject: {fileID: 4830343980032689656}
+  m_Mesh: {fileID: -3179377356429746960, guid: 4b9038823abcac2478f5c9759bb88b16, type: 3}
+--- !u!23 &8049285485225968071
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3903583691581629345}
+  m_GameObject: {fileID: 4830343980032689656}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5cda67d8b4b2c8a4bad5c1fbf249069f, type: 2}
+  - {fileID: 2100000, guid: 150afe6abc8a29742847fb813394cbce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,38 +84,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!205 &9096564157039926623
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3903583691581629345}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -8.733039, y: 13.02441, z: -7.119224}
-  m_Size: 26.064442
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.074214175
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: -7511558181221131132, guid: 87f447c941fcf614797c20aa46b255d7, type: 3}
-  - screenRelativeHeight: 0.03354273
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.009870376
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
---- !u!65 &4442509625820788426
+--- !u!65 &3759940043621974988
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3903583691581629345}
+  m_GameObject: {fileID: 4830343980032689656}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -129,5 +103,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9186611, y: 26.064442, z: 0.94435215}
-  m_Center: {x: -0.044662476, y: 13.02441, z: -0.18224573}
+  m_Size: {x: 0.34941673, y: 2.1329618, z: 0.35870183}
+  m_Center: {x: 0.0076169968, y: 1.0664809, z: 0.025542319}
