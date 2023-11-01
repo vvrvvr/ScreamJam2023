@@ -18,7 +18,7 @@ public class DirectionPainter : MonoBehaviour
     public float radius = 1;
     public float strength = 1;
     public float hardness = 1;
-    public float radiusCoefficient = 0.5f; // Коэффициент для контроля зависимости
+    public float radiusCoefficient = 0.5f;
     public float minRadius = 1.0f; // Минимальное значение радиуса
     void Update()
     {

@@ -62,6 +62,10 @@ public class PaintManager : Singleton<PaintManager>{
         RenderTexture support = paintable.getSupport();
         Renderer rend = paintable.getRenderer();
 
+        paintable.paintTime += Time.deltaTime;
+        if(paintable.paintTime >= paintable.maxPaintTime)
+            paintable.DissolveAndDestroy();
+
         paintMaterial.SetFloat(prepareUVID, 0);
         paintMaterial.SetVector(positionID, pos);
         paintMaterial.SetFloat(hardnessID, hardness);

@@ -1,5 +1,6 @@
 using UnityEngine;
 using Lighter;
+using DG.Tweening;
 
 public class Paintable : MonoBehaviour {
     const int TEXTURE_SIZE = 1024;
@@ -10,7 +11,15 @@ public class Paintable : MonoBehaviour {
     RenderTexture uvIslandsRenderTexture;
     RenderTexture maskRenderTexture;
     RenderTexture supportTexture;
-   // private TextureChecker _textureChecker;
+    
+    //dissolve and destroy
+    private bool isStartDissolve = false;
+    [HideInInspector] public float paintTime = 0;
+    public float maxPaintTime = 2.5f;
+    private Material mat;          // Ссылка на материал, который вы хотите анимировать
+    public float dissolveTime = 1f;
+
+    // private TextureChecker _textureChecker;
     
     Renderer rend;
 
@@ -36,13 +45,27 @@ public class Paintable : MonoBehaviour {
         supportTexture.filterMode =  FilterMode.Bilinear;
 
         rend = GetComponent<Renderer>();
+        mat = rend.material;
         rend.material.SetTexture(maskTextureID, extendIslandsRenderTexture);
-        
-        // _textureChecker = GetComponent<TextureChecker>();
-        // if(_textureChecker !=null)
-        //     _textureChecker.targetRenderTexture = maskRenderTexture;
-        
+
         PaintManager.instance.initTextures(this);
+    }
+
+    public void DissolveAndDestroy()
+    {
+        if (isStartDissolve)
+            return;
+        isStartDissolve = true;
+        if (mat != null && dissolveTime > 0)
+        {
+            // Используем DoTween для анимации значения dissolve от 0 до 1
+            mat.DOFloat(0f, "_dissolve", dissolveTime)
+                .OnComplete(() =>
+                {
+                    // Анимация завершена
+                   Destroy(gameObject);
+                });
+        }
     }
 
     void OnDisable(){
