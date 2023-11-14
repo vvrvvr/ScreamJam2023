@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: blinkCutscene
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 1825620812284930104}
+--- !u!114 &1825620812284930104
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac04d2c95f7a6aa4681d48e2bbe16eed, type: 3}
+  m_Name: EyeBlink
+  m_EditorClassIdentifier: 
+  active: 1
+  Blink:
+    m_OverrideState: 1
+    m_Value: 1
+  VignetteOuterRing:
+    m_OverrideState: 0
+    m_Value: 0.4
+  VignetteInnerRing:
+    m_OverrideState: 0
+    m_Value: 0.5
+  VignetteAspectRatio:
+    m_OverrideState: 0
+    m_Value: 1
