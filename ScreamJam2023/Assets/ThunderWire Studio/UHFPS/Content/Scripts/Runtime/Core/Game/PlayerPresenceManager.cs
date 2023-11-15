@@ -132,6 +132,15 @@ namespace UHFPS.Runtime
         {
             StateMachine.SetEnabled(!freeze);
         }
+        public void FreezeMovement2(bool freeze)
+        {
+            GameTools.ShowCursor(!true, false);
+
+            foreach (var component in playerComponents)
+            {
+                component.SetEnabled(!freeze);
+            }
+        }
 
         public void FreezeLook(bool freeze, bool showCursor = false)
         {
