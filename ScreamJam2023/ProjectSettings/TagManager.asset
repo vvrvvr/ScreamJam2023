@@ -7,6 +7,7 @@ TagManager:
   - Flesh
   - forest
   - wood
+  - Switcher
   layers:
   - Default
   - TransparentFX
