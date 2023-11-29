@@ -24,7 +24,7 @@ namespace UHFPS.Runtime
             yield return BackgroundFader.StartBackgroundFade(false);
             yield return new WaitToTaskComplete(SaveGameManager.RemoveAllSaves());
             SaveGameManager.LoadSceneName = NewGameSceneName;
-            SceneManager.LoadScene(SaveGameManager.LMS);
+           SceneManager.LoadScene(NewGameSceneName);
         }
 
         public void QuitGame()

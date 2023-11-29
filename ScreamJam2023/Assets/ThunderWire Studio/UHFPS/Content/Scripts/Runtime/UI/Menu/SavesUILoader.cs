@@ -47,8 +47,12 @@ namespace UHFPS.Runtime
                 if(ContinueButton != null)
                     ContinueButton.gameObject.SetActive(lastSave.HasValue);
 
-                if (FadeOutAtStart) 
+                if (FadeOutAtStart)
+                {
+                    BackgroundFader.gameObject.SetActive(true);
                     StartCoroutine(BackgroundFader.StartBackgroundFade(true));
+                    
+                }
             }
         }
 
