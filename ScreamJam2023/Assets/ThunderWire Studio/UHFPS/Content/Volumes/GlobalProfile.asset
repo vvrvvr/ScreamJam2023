@@ -113,22 +113,22 @@ MonoBehaviour:
   active: 1
   EffectFade:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.609
   TentaclesPosition:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.039
   LayerPosition:
     m_OverrideState: 1
-    m_Value: -0.02
+    m_Value: 0.82
   VignetteStrength:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.195
   TentaclesSpeed:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 1.57
   Tentacles:
     m_OverrideState: 1
-    m_Value: 20
+    m_Value: 29
   TopLayer:
     m_OverrideState: 1
     m_Value: 1
@@ -170,10 +170,10 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.659
+    m_Value: 0.809
   response:
     m_OverrideState: 1
-    m_Value: 0.503
+    m_Value: 0.797
   texture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -532,7 +532,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.473
+    m_Value: 0.541
   smoothness:
     m_OverrideState: 0
     m_Value: 0.2
