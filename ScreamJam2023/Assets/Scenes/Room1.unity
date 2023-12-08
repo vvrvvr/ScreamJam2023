@@ -55488,7 +55488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003626896647212534, guid: 4573e88483388d147af10317cfe8344f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9994292
+      value: 0.99999607
       objectReference: {fileID: 0}
     - target: {fileID: 3003626896647212534, guid: 4573e88483388d147af10317cfe8344f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -55496,7 +55496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003626896647212534, guid: 4573e88483388d147af10317cfe8344f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.033782538
+      value: -0.0028019887
       objectReference: {fileID: 0}
     - target: {fileID: 3003626896647212534, guid: 4573e88483388d147af10317cfe8344f, type: 3}
       propertyPath: m_LocalRotation.z
@@ -55508,7 +55508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3003626896647212534, guid: 4573e88483388d147af10317cfe8344f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -3.872
+      value: -0.321
       objectReference: {fileID: 0}
     - target: {fileID: 3003626896647212534, guid: 4573e88483388d147af10317cfe8344f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -70209,6 +70209,30 @@ PrefabInstance:
     - target: {fileID: 1373681383760821686, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
       propertyPath: m_Name
       value: cassete_FIRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
+      propertyPath: ExamineType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
+      propertyPath: MessageType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
+      propertyPath: ExamineRotate
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
+      propertyPath: InteractableType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
+      propertyPath: HintMessage.GlocText
+      value: Spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
+      propertyPath: ExamineTitle.GlocText
+      value: FIRE
       objectReference: {fileID: 0}
     - target: {fileID: 5046019379285526839, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
       propertyPath: taken
