@@ -22,7 +22,7 @@ namespace UHFPS.Runtime
             [Space] public UnityEvent HotspotAction;
         }
 
-        public enum InteractableTypeEnum { GenericItem, InventoryItem, ExamineItem, InventoryExpand }
+        public enum InteractableTypeEnum { GenericItem, InventoryItem, ExamineItem, InventoryExpand, InteractItem}
         public enum MessageTypeEnum { None, Hint, Alert }
         public enum ExamineTypeEnum { None, GenericObject, CustomObject }
         public enum ExamineRotateEnum { Static, Horizontal, Vertical, Both }
@@ -79,6 +79,8 @@ namespace UHFPS.Runtime
         public UnityEvent OnTakeEvent;
         public UnityEvent OnExamineStartEvent;
         public UnityEvent OnExamineEndEvent;
+
+        public UnityEvent OnInteractEvent;
 
         public bool IsExamined;
 
@@ -250,5 +252,6 @@ namespace UHFPS.Runtime
         {
             Gizmos.DrawCube(bounds.center, bounds.size);
         }
+
     }
 }

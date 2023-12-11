@@ -224,10 +224,17 @@ namespace UHFPS.Editors
                     EditorGUILayout.Space(1f);
                     if (EditorDrawing.BeginFoldoutBorderLayout(new GUIContent("Event Settings"), ref foldout[5]))
                     {
-                        if (interactableTypeEnum != InteractableItem.InteractableTypeEnum.ExamineItem)
+                        
+
+                        if (interactableTypeEnum != InteractableItem.InteractableTypeEnum.ExamineItem && interactableTypeEnum != InteractableItem.InteractableTypeEnum.InteractItem )
                             Properties.Draw("OnTakeEvent");
 
-                        if (examineTypeEnum != InteractableItem.ExamineTypeEnum.None)
+
+                        if(interactableTypeEnum == InteractableItem.InteractableTypeEnum.InteractItem)
+                        {
+                            Properties.Draw("OnInteractEvent");
+                        }
+                        else if (examineTypeEnum != InteractableItem.ExamineTypeEnum.None)
                         {
                             Properties.Draw("OnExamineStartEvent");
                             Properties.Draw("OnExamineEndEvent");

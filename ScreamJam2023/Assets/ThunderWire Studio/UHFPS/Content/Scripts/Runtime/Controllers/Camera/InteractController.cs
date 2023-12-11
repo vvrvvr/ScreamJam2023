@@ -378,6 +378,11 @@ namespace UHFPS.Runtime
                 {
                     interactable.OnInteract();
                 }
+
+                if(interactable.InteractableType == InteractableTypeEnum.InteractItem)
+                {
+                    interactable.OnInteractEvent.Invoke();
+                }
             }
         }
 
