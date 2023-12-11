@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 67cc4248e708e5e44b5f18556ca521bd
+<<<<<<<< Updated upstream:ScreamJam2023/Assets/Data/SavedGame/Save000/Data.bin.meta
+guid: 7bd61c52dd91f004fa433aa2f3d9310d
+========
+guid: 40723cde5ed36d64e803f195892863e7
+>>>>>>>> Stashed changes:ScreamJam2023/Assets/Scenes/Forest_02_test.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
