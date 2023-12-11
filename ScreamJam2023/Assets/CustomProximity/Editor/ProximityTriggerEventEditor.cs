@@ -19,6 +19,7 @@ namespace CustomProximity.Editors
         private SerializedProperty onTriggerEnterEvent;
         private SerializedProperty triggerTag;
         private SerializedProperty triggerLayer;
+        private SerializedProperty maxTriggerCount; // New serialized property for max trigger count
 
         private void OnEnable()
         {
@@ -32,8 +33,8 @@ namespace CustomProximity.Editors
             gizmosDrawType = serializedObject.FindProperty("gizmosDrawType");
             triggerTag = serializedObject.FindProperty("triggerTag");
             triggerLayer = serializedObject.FindProperty("triggerLayer");
+            maxTriggerCount = serializedObject.FindProperty("maxTriggerCount"); // Assign max trigger count property
             onTriggerEnterEvent = serializedObject.FindProperty("onTriggerEnterEvent");
-            
         }
 
         public override void OnInspectorGUI()
@@ -53,10 +54,11 @@ namespace CustomProximity.Editors
 
             // Show LayerMask field using a LayerMaskField
             triggerLayer.intValue = LayerMaskField("Trigger Layer", triggerLayer.intValue);
-            EditorGUILayout.PropertyField(onTriggerEnterEvent);
 
-            // Show tags array field with selectable tags
-           
+            // Show the max trigger count field
+            EditorGUILayout.PropertyField(maxTriggerCount, new GUIContent("Max Trigger Count"));
+
+            EditorGUILayout.PropertyField(onTriggerEnterEvent);
 
             serializedObject.ApplyModifiedProperties();
         }

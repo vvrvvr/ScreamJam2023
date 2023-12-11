@@ -26,6 +26,8 @@ namespace CustomProximity
         public Vector3 colliderRotation;
         public Color gizmosColor = Color.yellow;
         public GizmosDrawType gizmosDrawType = GizmosDrawType.Wire;
+        public int maxTriggerCount = 1; // Maximum number of trigger counts
+        private int remainingTriggerCount; // Remaining trigger counts
         public string triggerTag = "Untagged"; // Array of tags that trigger the event
         public LayerMask triggerLayer; // Layer mask for triggering the event
         public UnityEvent onTriggerEnterEvent = new UnityEvent();
@@ -34,6 +36,7 @@ namespace CustomProximity
         private void OnEnable()
         {
             AddCollider();
+            remainingTriggerCount = maxTriggerCount;
         }
 
         private void AddCollider()
@@ -52,6 +55,7 @@ namespace CustomProximity
                     boxCollider.size = colliderSize;
                     boxCollider.center = colliderPosition;
                     boxCollider.transform.rotation = Quaternion.Euler(colliderRotation);
+                    boxCollider.isTrigger = true; // Set as trigger
                     break;
 
                 case ColliderType.Sphere:
@@ -59,6 +63,7 @@ namespace CustomProximity
                     sphereCollider.radius = colliderSize.x / 2f; // Assuming colliderSize represents diameter
                     sphereCollider.center = colliderPosition;
                     sphereCollider.transform.rotation = Quaternion.Euler(colliderRotation);
+                    sphereCollider.isTrigger = true; // Set as trigger
                     break;
 
                 case ColliderType.Capsule:
@@ -67,6 +72,7 @@ namespace CustomProximity
                     capsuleCollider.radius = colliderSize.y;
                     capsuleCollider.center = colliderPosition;
                     capsuleCollider.transform.rotation = Quaternion.Euler(colliderRotation);
+                    capsuleCollider.isTrigger = true; // Set as trigger
                     break;
 
                 default:
@@ -237,7 +243,7 @@ namespace CustomProximity
 
         void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag(triggerTag))
+            if (!other.CompareTag(triggerTag))
             {
                 // Skip if the tag is not in the triggerTags array
                 return;
@@ -250,7 +256,21 @@ namespace CustomProximity
             }
 
             // Perform actions when trigger is entered
-            onTriggerEnterEvent.Invoke();
+            if (remainingTriggerCount > 0)
+            {
+                // Perform actions when trigger is entered
+                onTriggerEnterEvent.Invoke();
+                Debug.Log("TRIGGERED BY PROXIMITY !");
+                // Decrement the remaining trigger count
+                remainingTriggerCount--;
+
+                // If no remaining trigger counts, disable the script
+                if (remainingTriggerCount == 0)
+                {
+                    enabled = false;
+                }
+            }
+           
         }
     }
 }
