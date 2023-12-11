@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEditor;
 
 namespace CustomProximity
 {
@@ -24,8 +25,10 @@ namespace CustomProximity
         public Vector3 colliderPosition;
         public Vector3 colliderRotation;
         public Color gizmosColor = Color.yellow;
-        public GizmosDrawType gizmosDrawType = GizmosDrawType.Wire; // New property for Gizmos draw type
+        public GizmosDrawType gizmosDrawType = GizmosDrawType.Wire;
         public UnityEvent onTriggerEnterEvent = new UnityEvent();
+        public string triggerTags = "Untagged"; // Array of tags that trigger the event
+        public LayerMask triggerLayer; // Layer mask for triggering the event
 
         private void OnEnable()
         {
@@ -64,8 +67,6 @@ namespace CustomProximity
                     capsuleCollider.center = colliderPosition;
                     capsuleCollider.transform.rotation = Quaternion.Euler(colliderRotation);
                     break;
-
-                // Add other cases for additional collider types
 
                 default:
                     Debug.LogError("Unsupported collider type");
@@ -124,30 +125,39 @@ namespace CustomProximity
             switch (colliderType)
             {
                 case ColliderType.Box:
-                    Gizmos.matrix = Matrix4x4.TRS(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), colliderSize);
                     if (gizmosDrawType == GizmosDrawType.Wire)
+                    {
+                        // Draw wire box gizmos
+                        Gizmos.matrix = Matrix4x4.TRS(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), colliderSize);
                         Gizmos.DrawWireCube(Vector3.zero, Vector3.one);
+                    }
                     else
+                    {
+                        // Draw filled box gizmos
+                        Gizmos.matrix = Matrix4x4.TRS(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), colliderSize);
                         Gizmos.DrawCube(Vector3.zero, Vector3.one);
+                    }
                     break;
 
                 case ColliderType.Sphere:
-                    Gizmos.matrix = Matrix4x4.TRS(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), Vector3.one);
                     if (gizmosDrawType == GizmosDrawType.Wire)
+                    {
+                        // Draw wire sphere gizmos
+                        Gizmos.matrix = Matrix4x4.TRS(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), Vector3.one);
                         Gizmos.DrawWireSphere(Vector3.zero, colliderSize.x / 2f);
+                    }
                     else
+                    {
+                        // Draw filled sphere gizmos
+                        Gizmos.matrix = Matrix4x4.TRS(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), Vector3.one);
                         Gizmos.DrawSphere(Vector3.zero, colliderSize.x / 2f);
+                    }
                     break;
 
                 case ColliderType.Capsule:
-                    Gizmos.matrix = Matrix4x4.TRS(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), Vector3.one);
-                    if (gizmosDrawType == GizmosDrawType.Wire)
-                        Gizmos.DrawWireMesh(CreateCapsuleMesh(colliderSize.x, colliderSize.y));
-                    else
-                        Gizmos.DrawMesh(CreateCapsuleMesh(colliderSize.x, colliderSize.y));
+                    // Draw capsule gizmos
+                    DrawCapsuleGizmos();
                     break;
-
-                // Add other cases for additional collider types
 
                 default:
                     Debug.LogError("Unsupported collider type");
@@ -155,8 +165,89 @@ namespace CustomProximity
             }
         }
 
+        private void DrawCapsuleGizmos()
+        {
+            if (gizmosDrawType == GizmosDrawType.Wire)
+            {
+                // Draw wire capsule gizmos
+                DrawWireCapsule(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), colliderSize.y, colliderSize.x, gizmosColor);
+            }
+            else
+            {
+                // Draw filled capsule gizmos
+                DrawFilledCapsule(transform.position + colliderPosition, Quaternion.Euler(colliderRotation), colliderSize.y, colliderSize.x, gizmosColor);
+            }
+        }
+
+        public static void DrawWireCapsule(Vector3 _pos, Quaternion _rot, float _height, float _radius, Color _color = default(Color))
+        {
+            // The wire capsule drawing method goes here
+            if (_color != default(Color))
+                Handles.color = _color;
+
+            Matrix4x4 angleMatrix = Matrix4x4.TRS(_pos, _rot, Handles.matrix.lossyScale);
+
+            using (new Handles.DrawingScope(angleMatrix))
+            {
+                var pointOffset = (_height - (_radius * 2)) / 2;
+
+                // Draw sideways
+                Handles.DrawWireArc(Vector3.up * pointOffset, Vector3.left, Vector3.back, -180, _radius);
+                Handles.DrawLine(new Vector3(0, pointOffset, -_radius), new Vector3(0, -pointOffset, -_radius));
+                Handles.DrawLine(new Vector3(0, pointOffset, _radius), new Vector3(0, -pointOffset, _radius));
+                Handles.DrawWireArc(Vector3.down * pointOffset, Vector3.left, Vector3.back, 180, _radius);
+
+                // Draw frontways
+                Handles.DrawWireArc(Vector3.up * pointOffset, Vector3.back, Vector3.left, 180, _radius);
+                Handles.DrawLine(new Vector3(-_radius, pointOffset, 0), new Vector3(-_radius, -pointOffset, 0));
+                Handles.DrawLine(new Vector3(_radius, pointOffset, 0), new Vector3(_radius, -pointOffset, 0));
+                Handles.DrawWireArc(Vector3.down * pointOffset, Vector3.back, Vector3.left, -180, _radius);
+
+                // Draw center
+                Handles.DrawWireDisc(Vector3.up * pointOffset, Vector3.up, _radius);
+                Handles.DrawWireDisc(Vector3.down * pointOffset, Vector3.up, _radius);
+            }
+        }
+
+        public static void DrawFilledCapsule(Vector3 _pos, Quaternion _rot, float _height, float _radius, Color _color = default(Color))
+        {
+            // The filled capsule drawing method goes here
+            if (_color != default(Color))
+                Handles.color = _color;
+
+            Matrix4x4 angleMatrix = Matrix4x4.TRS(_pos, _rot, Handles.matrix.lossyScale);
+
+            using (new Handles.DrawingScope(angleMatrix))
+            {
+                var pointOffset = (_height - (_radius * 2)) / 2;
+
+                // Draw sideways
+                Handles.DrawSolidArc(Vector3.up * pointOffset, Vector3.left, Vector3.back, -180, _radius);
+                Handles.DrawSolidRectangleWithOutline(new Rect(-_radius, pointOffset, _radius * 2, -_height), _color, _color);
+
+                // Draw frontways
+                Handles.DrawSolidArc(Vector3.up * pointOffset, Vector3.back, Vector3.left, 180, _radius);
+                Handles.DrawSolidRectangleWithOutline(new Rect(-_radius, pointOffset, _radius * 2, -_height), _color, _color);
+
+                // Draw center
+                Handles.DrawSolidDisc(Vector3.up * pointOffset, Vector3.up, _radius);
+            }
+        }
+
         void OnTriggerEnter(Collider other)
         {
+            if (!string.IsNullOrEmpty(triggerTags) && !System.Array.Exists(triggerTags.Split(','), tag => tag == other.tag))
+            {
+                // Skip if the tag is not in the triggerTags array
+                return;
+            }
+
+            if ((triggerLayer.value & (1 << other.gameObject.layer)) == 0)
+            {
+                // Skip if the layer is not in the triggerLayer mask
+                return;
+            }
+
             // Perform actions when trigger is entered
             onTriggerEnterEvent.Invoke();
         }

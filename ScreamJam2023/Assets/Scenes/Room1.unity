@@ -70383,10 +70383,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b521a3cd2f7a1e42892f8a645cbd222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderType: 2
+  colliderType: 0
   colliderSize: {x: 1, y: 1, z: 1}
   colliderPosition: {x: 0, y: 0, z: 0}
   colliderRotation: {x: 0, y: 0, z: 0}
+  gizmosColor: {r: 0.8773585, g: 0.20128557, b: 0.028969401, a: 1}
+  gizmosDrawType: 0
   onTriggerEnterEvent:
     m_PersistentCalls:
       m_Calls: []

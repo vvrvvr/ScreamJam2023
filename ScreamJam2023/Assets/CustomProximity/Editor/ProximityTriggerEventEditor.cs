@@ -13,8 +13,10 @@ namespace CustomProximity.Editors
         private SerializedProperty colliderPosition;
         private SerializedProperty colliderRotation;
         private SerializedProperty gizmosColor;
-        private SerializedProperty gizmosDrawType; // New serialized property for Gizmos draw type
+        private SerializedProperty gizmosDrawType;
         private SerializedProperty onTriggerEnterEvent;
+        private SerializedProperty triggerTags; // New serialized property for tags
+        private SerializedProperty triggerLayer; // New serialized property for layer
 
         private void OnEnable()
         {
@@ -25,8 +27,10 @@ namespace CustomProximity.Editors
             colliderPosition = serializedObject.FindProperty("colliderPosition");
             colliderRotation = serializedObject.FindProperty("colliderRotation");
             gizmosColor = serializedObject.FindProperty("gizmosColor");
-            gizmosDrawType = serializedObject.FindProperty("gizmosDrawType"); // Assign Gizmos draw type property
+            gizmosDrawType = serializedObject.FindProperty("gizmosDrawType");
             onTriggerEnterEvent = serializedObject.FindProperty("onTriggerEnterEvent");
+            triggerTags = serializedObject.FindProperty("triggerTags"); // Assign serialized property for tags
+            triggerLayer = serializedObject.FindProperty("triggerLayer"); // Assign serialized property for layer
         }
 
         public override void OnInspectorGUI()
@@ -38,8 +42,10 @@ namespace CustomProximity.Editors
             EditorGUILayout.PropertyField(colliderPosition);
             EditorGUILayout.PropertyField(colliderRotation);
             EditorGUILayout.PropertyField(gizmosColor);
-            EditorGUILayout.PropertyField(gizmosDrawType); // Show Gizmos draw type field
+            EditorGUILayout.PropertyField(gizmosDrawType);
             EditorGUILayout.PropertyField(onTriggerEnterEvent);
+            EditorGUILayout.PropertyField(triggerTags); // Show tags field
+            EditorGUILayout.PropertyField(triggerLayer); // Show layer field
 
             serializedObject.ApplyModifiedProperties();
         }
