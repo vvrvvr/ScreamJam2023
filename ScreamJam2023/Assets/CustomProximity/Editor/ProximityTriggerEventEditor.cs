@@ -1,3 +1,5 @@
+// ProximityTriggerEventEditor.cs
+
 using UnityEditor;
 using UnityEngine;
 
@@ -15,8 +17,8 @@ namespace CustomProximity.Editors
         private SerializedProperty gizmosColor;
         private SerializedProperty gizmosDrawType;
         private SerializedProperty onTriggerEnterEvent;
-        private SerializedProperty triggerTags; // New serialized property for tags
-        private SerializedProperty triggerLayer; // New serialized property for layer
+        private SerializedProperty triggerTag;
+        private SerializedProperty triggerLayer;
 
         private void OnEnable()
         {
@@ -28,9 +30,10 @@ namespace CustomProximity.Editors
             colliderRotation = serializedObject.FindProperty("colliderRotation");
             gizmosColor = serializedObject.FindProperty("gizmosColor");
             gizmosDrawType = serializedObject.FindProperty("gizmosDrawType");
+            triggerTag = serializedObject.FindProperty("triggerTag");
+            triggerLayer = serializedObject.FindProperty("triggerLayer");
             onTriggerEnterEvent = serializedObject.FindProperty("onTriggerEnterEvent");
-            triggerTags = serializedObject.FindProperty("triggerTags"); // Assign serialized property for tags
-            triggerLayer = serializedObject.FindProperty("triggerLayer"); // Assign serialized property for layer
+            
         }
 
         public override void OnInspectorGUI()
@@ -43,11 +46,27 @@ namespace CustomProximity.Editors
             EditorGUILayout.PropertyField(colliderRotation);
             EditorGUILayout.PropertyField(gizmosColor);
             EditorGUILayout.PropertyField(gizmosDrawType);
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PrefixLabel("Trigger Tag");
+            triggerTag.stringValue = EditorGUILayout.TagField("", triggerTag.stringValue);
+            EditorGUILayout.EndHorizontal();
+
+            // Show LayerMask field using a LayerMaskField
+            triggerLayer.intValue = LayerMaskField("Trigger Layer", triggerLayer.intValue);
             EditorGUILayout.PropertyField(onTriggerEnterEvent);
-            EditorGUILayout.PropertyField(triggerTags); // Show tags field
-            EditorGUILayout.PropertyField(triggerLayer); // Show layer field
+
+            // Show tags array field with selectable tags
+           
 
             serializedObject.ApplyModifiedProperties();
+        }
+
+        // Custom LayerMask field to display layers in a dropdown
+        private int LayerMaskField(string label, int layerMask)
+        {
+            var layers = UnityEditorInternal.InternalEditorUtility.layers;
+            layerMask = EditorGUILayout.MaskField(label, layerMask, layers);
+            return layerMask;
         }
     }
 }

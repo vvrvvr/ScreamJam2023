@@ -26,9 +26,10 @@ namespace CustomProximity
         public Vector3 colliderRotation;
         public Color gizmosColor = Color.yellow;
         public GizmosDrawType gizmosDrawType = GizmosDrawType.Wire;
-        public UnityEvent onTriggerEnterEvent = new UnityEvent();
-        public string triggerTags = "Untagged"; // Array of tags that trigger the event
+        public string triggerTag = "Untagged"; // Array of tags that trigger the event
         public LayerMask triggerLayer; // Layer mask for triggering the event
+        public UnityEvent onTriggerEnterEvent = new UnityEvent();
+       
 
         private void OnEnable()
         {
@@ -236,7 +237,7 @@ namespace CustomProximity
 
         void OnTriggerEnter(Collider other)
         {
-            if (!string.IsNullOrEmpty(triggerTags) && !System.Array.Exists(triggerTags.Split(','), tag => tag == other.tag))
+            if (other.CompareTag(triggerTag))
             {
                 // Skip if the tag is not in the triggerTags array
                 return;

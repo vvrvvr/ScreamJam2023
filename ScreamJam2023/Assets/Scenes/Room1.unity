@@ -70389,6 +70389,10 @@ MonoBehaviour:
   colliderRotation: {x: 0, y: 0, z: 0}
   gizmosColor: {r: 0.8773585, g: 0.20128557, b: 0.028969401, a: 1}
   gizmosDrawType: 0
+  triggerTag: Untagged
+  triggerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   onTriggerEnterEvent:
     m_PersistentCalls:
       m_Calls: []
