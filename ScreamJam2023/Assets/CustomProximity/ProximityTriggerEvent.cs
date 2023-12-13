@@ -31,6 +31,7 @@ namespace CustomProximity
         public string triggerTag = "Untagged"; // Array of tags that trigger the event
         public LayerMask triggerLayer; // Layer mask for triggering the event
         public UnityEvent onTriggerEnterEvent = new UnityEvent();
+        public UnityEvent onTriggerExitEvent = new UnityEvent(); // New UnityEvent for OnTriggerExit
        
 
         private void OnEnable()
@@ -271,6 +272,28 @@ namespace CustomProximity
                 }
             }
            
+        }
+
+        void OnTriggerExit(Collider other)
+        {
+            if (!other.CompareTag(triggerTag))
+            {
+                // Skip if the tag is not in the triggerTags array
+                return;
+            }
+
+            if ((triggerLayer.value & (1 << other.gameObject.layer)) == 0)
+            {
+                // Skip if the layer is not in the triggerLayer mask
+                return;
+            }
+
+            // Perform actions when trigger is exited
+            onTriggerExitEvent.Invoke();
+            Debug.Log("EXITED PROXIMITY!");
+
+            // If needed, you can reset the remaining trigger count here
+            remainingTriggerCount = maxTriggerCount;
         }
     }
 }

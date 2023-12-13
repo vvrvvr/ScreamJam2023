@@ -6417,11 +6417,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2965479443902242208, guid: abd36ea6ecd3ae540b096983523e322f, type: 3}
   m_PrefabInstance: {fileID: 8662672484946631699}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1490955905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8547696617252793535, guid: 6b1b9a7cd00fec24cbcbd92af91c114c, type: 3}
-  m_PrefabInstance: {fileID: 383216645598151341}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1501876708
 GameObject:
   m_ObjectHideFlags: 0
@@ -68542,6 +68537,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1862305740}
     m_Modifications:
+    - target: {fileID: 2800189004364378725, guid: abd36ea6ecd3ae540b096983523e322f, type: 3}
+      propertyPath: InteractableType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2965479443902242208, guid: abd36ea6ecd3ae540b096983523e322f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.389
@@ -70256,66 +70255,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: cassete_FIRE
       objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: ExamineType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: MessageType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: ExamineRotate
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: InteractableType
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: HintMessage.GlocText
-      value: Spin
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: ExamineTitle.GlocText
-      value: FIRE
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnTakeEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnExamineStartEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnExamineStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnExamineStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1068985953}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnExamineStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnExamineStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnExamineStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Playables.PlayableDirector, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: OnExamineStartEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5046019379285526839, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      propertyPath: taken
-      value: 
-      objectReference: {fileID: 1490955905}
     - target: {fileID: 8859234476792050837, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.537
@@ -70356,60 +70295,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2968591725948061397, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-    - {fileID: 5349006657752435536, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1373681383760821686, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8860142499192874954}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
---- !u!1 &8860142499192874953 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1373681383760821686, guid: ab75052a53bff574dbfbc102da4c5950, type: 3}
-  m_PrefabInstance: {fileID: 8860142499192874952}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8860142499192874954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8860142499192874953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b521a3cd2f7a1e42892f8a645cbd222, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colliderType: 0
-  colliderSize: {x: 1.68, y: 1.54, z: 1.88}
-  colliderPosition: {x: 0, y: 0, z: 0}
-  colliderRotation: {x: 0, y: 0, z: 0}
-  gizmosColor: {r: 0.2309216, g: 0.8784314, b: 0.02745098, a: 0.18431373}
-  gizmosDrawType: 1
-  maxTriggerCount: 1
-  triggerTag: Player
-  triggerLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  onTriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1068985953}
-        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Play
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 9b3a2d17dc501f346bc9b06c032f0374, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Playables.PlayableAsset,
-            UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!224 &8860431772969067002
 RectTransform:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ namespace CustomProximity.Editors
         private SerializedProperty gizmosColor;
         private SerializedProperty gizmosDrawType;
         private SerializedProperty onTriggerEnterEvent;
+        private SerializedProperty onTriggerExitEvent; // New SerializedProperty for OnTriggerExit
         private SerializedProperty triggerTag;
         private SerializedProperty triggerLayer;
         private SerializedProperty maxTriggerCount; // New serialized property for max trigger count
@@ -35,6 +36,7 @@ namespace CustomProximity.Editors
             triggerLayer = serializedObject.FindProperty("triggerLayer");
             maxTriggerCount = serializedObject.FindProperty("maxTriggerCount"); // Assign max trigger count property
             onTriggerEnterEvent = serializedObject.FindProperty("onTriggerEnterEvent");
+            onTriggerExitEvent = serializedObject.FindProperty("onTriggerExitEvent"); // Assign onTriggerExitEvent property
         }
 
         public override void OnInspectorGUI()
@@ -59,6 +61,7 @@ namespace CustomProximity.Editors
             EditorGUILayout.PropertyField(maxTriggerCount, new GUIContent("Max Trigger Count"));
 
             EditorGUILayout.PropertyField(onTriggerEnterEvent);
+            EditorGUILayout.PropertyField(onTriggerExitEvent);
 
             serializedObject.ApplyModifiedProperties();
         }
