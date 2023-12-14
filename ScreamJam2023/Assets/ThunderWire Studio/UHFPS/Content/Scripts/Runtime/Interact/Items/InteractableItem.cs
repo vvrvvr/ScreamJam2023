@@ -22,7 +22,7 @@ namespace UHFPS.Runtime
             [Space] public UnityEvent HotspotAction;
         }
 
-        public enum InteractableTypeEnum { GenericItem, InventoryItem, ExamineItem, InventoryExpand }
+        public enum InteractableTypeEnum { GenericItem, InventoryItem, ExamineItem, InventoryExpand, InteractItem}
         public enum MessageTypeEnum { None, Hint, Alert }
         public enum ExamineTypeEnum { None, GenericObject, CustomObject }
         public enum ExamineRotateEnum { Static, Horizontal, Vertical, Both }
@@ -79,6 +79,8 @@ namespace UHFPS.Runtime
         public UnityEvent OnTakeEvent;
         public UnityEvent OnExamineStartEvent;
         public UnityEvent OnExamineEndEvent;
+
+        public UnityEvent OnInteractEvent;
 
         public bool IsExamined;
 
@@ -192,5 +194,64 @@ namespace UHFPS.Runtime
 
             ItemCustomData.JsonData = data["customData"].ToString();
         }
+
+        private void OnDrawGizmos()
+        {
+            InteractableItem interactableItem = GetComponent<InteractableItem>();
+
+            if (interactableItem != null && interactableItem.ExamineHotspot.Enabled)
+            {
+                Gizmos.color = new Color(1f, 1f, 0f, 0.5f); // Yellow color with 50% alpha
+
+                if (interactableItem.ExamineHotspot.HotspotTransform != null)
+                {
+                    Matrix4x4 previousMatrix = Gizmos.matrix;
+
+                    // Use the object's transformation matrix
+                    Gizmos.matrix = Matrix4x4.TRS(
+                        interactableItem.ExamineHotspot.HotspotTransform.position,
+                        interactableItem.ExamineHotspot.HotspotTransform.rotation,
+                        interactableItem.ExamineHotspot.HotspotTransform.lossyScale
+                    );
+
+                    DrawGizmoCube(GetObjectBounds(transform));
+
+                    // Restore the previous matrix
+                    Gizmos.matrix = previousMatrix;
+                }
+                else
+                {
+                    DrawGizmoCube(GetObjectBounds(transform));
+                }
+            }
+        }
+
+        private Bounds GetObjectBounds(Transform targetTransform)
+        {
+            Renderer[] renderers = targetTransform.GetComponentsInChildren<Renderer>();
+
+            if (renderers.Length > 0)
+            {
+                Bounds bounds = renderers[0].bounds;
+
+                foreach (Renderer renderer in renderers)
+                {
+                    bounds.Encapsulate(renderer.bounds);
+                }
+
+                return bounds;
+            }
+            else
+            {
+                Debug.LogWarning("No Renderer components found.");
+                return new Bounds();
+            }
+        }
+
+        private void DrawGizmoCube(Bounds bounds)
+        {
+            Gizmos.DrawCube(bounds.center, bounds.size);
+        }
+
     }
 }
