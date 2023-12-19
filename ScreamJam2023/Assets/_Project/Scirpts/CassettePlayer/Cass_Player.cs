@@ -127,12 +127,46 @@ public class Cass_Player : MonoBehaviour
 
     public void Play()
     {
-        if(activePlayable == null)
+        if (activePlayable == null)
             return;
-        activePlayable.Play();
-        playToggle.isOn = true;
-        //UpdateFunctionToggle();
+
+        // Check if the activePlayable is valid
+        if (activePlayable.playableAsset != null)
+        {
+            // Check if the current time is not at the start or end
+            if (activePlayable.time > 0 && activePlayable.time < activePlayable.duration)
+            {
+                // Resume if it's paused
+                if (activePlayable.state == PlayState.Paused)
+                {
+                    activePlayable.Resume();
+                    playToggle.isOn = true;
+                }
+                else
+                {
+                    // Otherwise, start playing from the beginning
+                    activePlayable.Play();
+                    playToggle.isOn = true;
+                }
+
+                // UpdateFunctionToggle();
+            }
+            else
+            {
+                Debug.LogWarning("Cannot play from the current position. Starting from the beginning.");
+                // Start playing from the beginning if the current time is at the start or end
+                activePlayable.Play();
+                playToggle.isOn = true;
+                // UpdateFunctionToggle();
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No playable asset assigned to activePlayable.");
+        }
     }
+
+
 
     public void Stop()
     {   
@@ -153,12 +187,15 @@ public class Cass_Player : MonoBehaviour
 
     public void RewindTape()
     {
-        if(activePlayable == null)
+        if (activePlayable == null)
             return;
+
+        rewindToggle.isOn = true;
+
         // Check if the activePlayable is valid
         if (activePlayable.playableAsset != null)
         {
-            // Calculate the new time by subtracting a certain duration (e.g., 1 second)
+            // Calculate the new time by subtracting a certain duration (e.g., 2 seconds)
             double newTime = activePlayable.time - 2.0; // Adjust the rewind duration as needed
 
             // Clamp the new time to ensure it doesn't go below 0
@@ -167,8 +204,8 @@ public class Cass_Player : MonoBehaviour
             // Set the new time for the activePlayable
             activePlayable.time = newTime;
 
-            // Set the speed to make it play backward
-            activePlayable.playableGraph.GetRootPlayable(0).SetSpeed(-1.0f);
+            // Reset the speed to make it play forward
+            activePlayable.playableGraph.GetRootPlayable(0).SetSpeed(1.0f);
 
             // Play from the new time
             activePlayable.Play();
@@ -178,6 +215,7 @@ public class Cass_Player : MonoBehaviour
             Debug.LogWarning("No playable asset assigned to activePlayable.");
         }
     }
+
 
 
     private IEnumerator TurnOffToggleAfterDelay(Toggle toggle, float delay)
