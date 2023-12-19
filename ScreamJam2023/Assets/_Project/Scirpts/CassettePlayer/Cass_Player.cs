@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
@@ -10,16 +11,16 @@ using UnityEngine.InputSystem;
 
 public class Cass_Player : MonoBehaviour
 {
-    public PlayableDirector activePlayable;
+    public Animator activeAnimator;
     public int activeTape = 0;
     [SerializeField] TextMeshProUGUI activeTapeName;
     public List<int> tapes_Owned = new List<int> { 0 };
-    [SerializeField] List<PlayableDirector> tapeClips;
-    public ToggleGroup functionToggleGroup; // Reference to the ToggleGroup for play, stop, pause, rewind
+    [SerializeField] List<Animator> tapeAnimators;
+    public ToggleGroup functionToggleGroup;
 
     [SerializeField] Canvas CassPlayer_UI;
 
-    private Toggle playToggle;
+    private UnityEngine.UI.Toggle playToggle;
     private Toggle stopToggle;
     private Toggle pauseToggle;
     private Toggle rewindToggle;
@@ -60,9 +61,9 @@ public class Cass_Player : MonoBehaviour
     {
         // Ensure activeTape is within bounds
         activeTape = Mathf.Clamp(activeTape, 0, tapes_Owned.Count - 1);
-        // Initialize the activePlayable with the first tape (if available)
-        if (tapeClips.Count > 0)
-            activePlayable = tapeClips[tapes_Owned[activeTape]];
+        // Initialize the activeAnimator with the first tape (if available)
+        if (tapeAnimators.Count > 0)
+            activeAnimator = tapeAnimators[tapes_Owned[activeTape]];
     }
 
     public void AddTape(int num)
@@ -79,8 +80,8 @@ public class Cass_Player : MonoBehaviour
     public void AssignActiveTape(int num)
     {
         activeTape = Mathf.Clamp(num, 0, tapes_Owned.Count - 1);
-        // Change the active playable to the assigned tape
-        activePlayable = tapeClips[tapes_Owned[activeTape]];
+        // Change the active animator to the assigned tape
+        activeAnimator = tapeAnimators[tapes_Owned[activeTape]];
     }
 
     public void NextTape()
@@ -88,14 +89,14 @@ public class Cass_Player : MonoBehaviour
         if (nextToggle != null)
         {
             nextToggle.isOn = true;
-            StartCoroutine(TurnOffToggleAfterDelay(nextToggle, 2f));
+            StartCoroutine(TurnOffToggleAfterDelay(nextToggle, 1f));
         }
         else
         {
             Debug.LogError("NextToggle not found.");
         }
 
-        if(activePlayable == null)
+        if (activeAnimator == null)
             return;
         if (tapes_Owned.Count <= 1)
         {
@@ -103,8 +104,7 @@ public class Cass_Player : MonoBehaviour
             return;
         }
 
-        activePlayable.Stop();
-
+        // Change the active animator to the next tape
         int indexOfActiveTape = tapes_Owned.IndexOf(activeTape);
         int nextTapeIndex = (indexOfActiveTape + 1) % tapes_Owned.Count;
 
@@ -114,107 +114,165 @@ public class Cass_Player : MonoBehaviour
             return;
         }
 
-        // Change the active playable to the next tape
         activeTape = nextTapeIndex;
-        activePlayable = tapeClips[tapes_Owned[activeTape]];
-        activeTapeName.text = activePlayable.gameObject.name;
+        activeAnimator = tapeAnimators[tapes_Owned[activeTape]];
+        activeTapeName.text = activeAnimator.gameObject.name;
         switchedTape = true;
         Debug.Log("Switched tapes");
 
         // Set the "NextToggle" and turn it off after 2 seconds
-        
     }
 
     public void Play()
     {
-        if (activePlayable == null)
+        if (activeAnimator == null)
             return;
 
-        // Check if the activePlayable is valid
-        if (activePlayable.playableAsset != null)
-        {
-            // Check if the current time is not at the start or end
-            if (activePlayable.time > 0 && activePlayable.time < activePlayable.duration)
-            {
-                // Resume if it's paused
-                if (activePlayable.state == PlayState.Paused)
-                {
-                    activePlayable.Resume();
-                    playToggle.isOn = true;
-                }
-                else
-                {
-                    // Otherwise, start playing from the beginning
-                    activePlayable.Play();
-                    playToggle.isOn = true;
-                }
+        playToggle.isOn = true;
 
-                // UpdateFunctionToggle();
+        // Check if the animator is paused or stopped
+        /* if (activeAnimator.GetCurrentAnimatorStateInfo(0).IsName("RootAnim"))
+        {
+            // Check if the animation has reached its full length
+            if (activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                // Animation is complete, restart from the beginning
+                activeAnimator.Play("RootAnim", 0, 0f);
             }
             else
             {
-                Debug.LogWarning("Cannot play from the current position. Starting from the beginning.");
-                // Start playing from the beginning if the current time is at the start or end
-                activePlayable.Play();
-                playToggle.isOn = true;
-                // UpdateFunctionToggle();
+                // Resume playing from the current position
+                activeAnimator.Play("RootAnim", 0, activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
             }
         }
         else
         {
-            Debug.LogWarning("No playable asset assigned to activePlayable.");
+            // Play the animation from the start
+            activeAnimator.Play("RootAnim", 0, 0f);
         }
+        */
+
+        if (activeAnimator.GetCurrentAnimatorStateInfo(0).IsName("RootAnim"))
+        {
+            // Check if the animation has reached its full length
+            if (activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                // Animation is complete, restart from the beginning
+                activeAnimator.Play("RootAnim", 0, 0f);
+            }
+            else
+            {
+                // Resume playing from the current position
+                activeAnimator.Play("RootAnim", 0, activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            }
+        }
+        else if (activeAnimator.GetCurrentAnimatorStateInfo(0).IsName("RootAnim-1"))
+        {
+            // Check if the animation has reached its full length
+            if (activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                // Animation is complete, restart from the beginning
+                activeAnimator.Play("RootAnim", 0, 0f);
+            }
+            else
+            {
+                // Resume playing from the current position
+                activeAnimator.Play("RootAnim", 0, activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            }
+        }
+        else
+        {
+            // Play the animation from the start
+            activeAnimator.Play("RootAnim", 0, 0f);
+        }
+        // Set the playback speed to 1 right away
+        activeAnimator.speed = 1f;
+
+        // UpdateFunctionToggle();
+    }
+
+    private IEnumerator SetPlaybackSpeedAfterDelay(float speed, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        
+        // Set the playback speed back to normal
+        activeAnimator.SetFloat("Speed", speed);
     }
 
 
-
     public void Stop()
-    {   
-        if(activePlayable == null)
+    {
+        if (activeAnimator == null)
             return;
-        activePlayable.Pause();
+
         stopToggle.isOn = true;
-        StartCoroutine(TurnOffToggleAfterDelay(stopToggle, 2f));
+        
+        // Stop the animation without resetting it
+        activeAnimator.Play("RootAnim", 0, 0f); // Set current time to 0
+        activeAnimator.StopPlayback();
+        
+        StartCoroutine(TurnOffToggleAfterDelay(stopToggle, 1f));
     }
 
     public void Pause()
     {
-        if(activePlayable == null)
+        if (activeAnimator == null)
             return;
-        activePlayable.Stop();
+
         pauseToggle.isOn = true;
+        // Pause the animation
+        activeAnimator.speed = 0f; // Set speed to 0 to pause
     }
 
     public void RewindTape()
     {
-        if (activePlayable == null)
+        if (activeAnimator == null)
             return;
 
         rewindToggle.isOn = true;
 
-        // Check if the activePlayable is valid
-        if (activePlayable.playableAsset != null)
+        // Get the array of currently playing clips
+        var currentClipInfo = activeAnimator.GetCurrentAnimatorClipInfo(0);
+        
+        Debug.Log("current clip" + currentClipInfo.Length );
+
+        if (activeAnimator.GetCurrentAnimatorStateInfo(0).IsName("RootAnim-1"))
         {
-            // Calculate the new time by subtracting a certain duration (e.g., 2 seconds)
-            double newTime = activePlayable.time - 2.0; // Adjust the rewind duration as needed
-
-            // Clamp the new time to ensure it doesn't go below 0
-            newTime = Mathf.Clamp((float)newTime, 0f, (float)activePlayable.duration);
-
-            // Set the new time for the activePlayable
-            activePlayable.time = newTime;
-
-            // Reset the speed to make it play forward
-            activePlayable.playableGraph.GetRootPlayable(0).SetSpeed(1.0f);
-
-            // Play from the new time
-            activePlayable.Play();
+            // Check if the animation has reached its full length
+            if (activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                // Animation is complete, restart from the beginning
+                activeAnimator.Play("RootAnim-1", 0, 0f);
+            }
+            else
+            {
+                // Resume playing from the current position
+                activeAnimator.Play("RootAnim-1", 0, activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            }
+        }
+        else if (activeAnimator.GetCurrentAnimatorStateInfo(0).IsName("RootAnim"))
+        {
+            // Check if the animation has reached its full length
+            if (activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                // Animation is complete, restart from the beginning
+                activeAnimator.Play("RootAnim-1", 0, 0f);
+            }
+            else
+            {
+                // Resume playing from the current position
+                activeAnimator.Play("RootAnim-1", 0, activeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            }
         }
         else
         {
-            Debug.LogWarning("No playable asset assigned to activePlayable.");
+            // Play the animation from the start
+            activeAnimator.Play("RootAnim-1", 0, 0f);
         }
+        
+        activeAnimator.speed = 1f;
     }
+
 
 
 
@@ -222,6 +280,8 @@ public class Cass_Player : MonoBehaviour
     {
         switchedTape = false;
         yield return new WaitForSeconds(delay);
+
+        // Check if the animator is not playing any animation on the root layer
         toggle.isOn = false;
     }
 

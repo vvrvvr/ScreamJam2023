@@ -5177,57 +5177,6 @@ Transform:
   - {fileID: 1738932342}
   m_Father: {fileID: 940550496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1152264557
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1152264559}
-  - component: {fileID: 1152264558}
-  m_Layer: 0
-  m_Name: TimeLinePlayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &1152264558
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152264557}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 9b3a2d17dc501f346bc9b06c032f0374, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 7168411049555294910, guid: 9b3a2d17dc501f346bc9b06c032f0374, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &1152264559
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152264557}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1469.4346, y: 512.99567, z: -3.4375873}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205100035
 GameObject:
   m_ObjectHideFlags: 0
@@ -66907,6 +66856,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2486835920094189689, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486835920094189689, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486835920094189689, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486835920094189689, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138407853063528214, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138407853063528214, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138407853063528214, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138407853063528214, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
       propertyPath: tapeClips.Array.data[0]
       value: 
@@ -66931,6 +66912,82 @@ PrefabInstance:
       propertyPath: tapeClips.Array.data[5]
       value: 
       objectReference: {fileID: 1068985953}
+    - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: tapeAnimators.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: tapeAnimators.Array.data[0]
+      value: 
+      objectReference: {fileID: 1068985952}
+    - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: tapeAnimators.Array.data[1]
+      value: 
+      objectReference: {fileID: 1068985952}
+    - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: tapeAnimators.Array.data[2]
+      value: 
+      objectReference: {fileID: 1068985952}
+    - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: tapeAnimators.Array.data[3]
+      value: 
+      objectReference: {fileID: 1068985952}
+    - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: tapeAnimators.Array.data[4]
+      value: 
+      objectReference: {fileID: 1068985952}
+    - target: {fileID: 5154754635315052916, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: tapeAnimators.Array.data[5]
+      value: 
+      objectReference: {fileID: 1068985952}
+    - target: {fileID: 6994488253317435665, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994488253317435665, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994488253317435665, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994488253317435665, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944378023985895209, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944378023985895209, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944378023985895209, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7944378023985895209, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212815177383242561, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212815177383242561, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212815177383242561, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212815177383242561, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8582409330872539367, guid: 0095e2a52466c25438b0772fa66307d6, type: 3}
       propertyPath: m_Name
       value: TapePlayerCanvas
@@ -73503,4 +73560,3 @@ SceneRoots:
   - {fileID: 611260788}
   - {fileID: 940550496}
   - {fileID: 8387960699836943430}
-  - {fileID: 1152264559}
