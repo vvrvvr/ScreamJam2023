@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: blinn24
+    second: {fileID: 2100000, guid: 696366def94ebd24a8aea5b2d1edaeae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: window_mat
     second: {fileID: 2100000, guid: 6437f78a77b4b914db0b58307b4d0c96, type: 2}
   materials:
